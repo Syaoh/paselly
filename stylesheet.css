@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* line 1, stylesheet.scss */
+body, ul, li {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, stylesheet.scss */
+ul {
+  list-style: none;
+}
+
+/* line 10, stylesheet.scss */
+li {
+  text-decoration-style: none;
+}
+
+/*h2一部共有*/
+/* line 15, stylesheet.scss */
+h2 {
+  font-family: "HiraKakuPro-W6";
+  font-size: 3.625rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* line 21, stylesheet.scss */
+h2 span {
+  color: #51c191;
+}
+
+/* line 24, stylesheet.scss */
+p.h2-above {
+  font-family: "HiraKakuPro-W6";
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.25rem;
+}
+
+/*中の要素を上下中央寄せ*/
+/* line 32, stylesheet.scss */
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*中の要素を下寄せ*/
+/* line 39, stylesheet.scss */
+.div-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*改行*/
+/* line 45, stylesheet.scss */
+.br {
+  display: block;
+}
+
+/* header-nav*/
+/* line 50, stylesheet.scss */
+#header-introduction {
+  background-image: url(image/header-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #6dd2a5;
+}
+
+/* line 58, stylesheet.scss */
+header #header-logo {
+  width: auto;
+  height: 33px;
+}
+/* line 62, stylesheet.scss */
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 44px;
+}
+/* line 69, stylesheet.scss */
+header ul li.rectangle {
+  width: 12rem;
+  border-radius: 22px;
+}
+/* line 73, stylesheet.scss */
+header ul li.log-in {
+  border: solid 1.6px #ffffff;
+}
+/* line 76, stylesheet.scss */
+header ul li.account-create {
+  background: #ffb635;
+}
+/* line 79, stylesheet.scss */
+header ul a {
+  color: #fff;
+  font-family: "HiraKakuPro-W6";
+  font-size: 1rem;
+}
+/* line 84, stylesheet.scss */
+header ul a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 88, stylesheet.scss */
+header ul a.in-rectangle-font {
+  font-size: 0.875rem;
+}
+
+/*introduction*/
+/* line 95, stylesheet.scss */
+#introduction {
+  margin-top: 20vh;
+}
+/* line 98, stylesheet.scss */
+#introduction p.h2 {
+  color: #ffffff;
+  font-family: "HiraKakuPro-W6";
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+/* line 104, stylesheet.scss */
+#introduction p.h2-p {
+  color: #ffffff;
+  font-family: "HiraKakuPro-W3";
+  font-size: 25px;
+  font-weight: 400;
+}
+/* line 110, stylesheet.scss */
+#introduction p#img-crown-p {
+  display: inline-block;
+  padding: 10px 55px;
+  border-radius: 45px;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px rgba(119, 119, 119, 0.5);
+  color: #51c191;
+  font-family: "ToppanBunkyuMidashiGothicStdN-ExtraBold";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* line 121, stylesheet.scss */
+#introduction p.h3-rectangle-p {
+  color: #ffffff;
+  font-family: "HiraKakuPro-W3";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 128, stylesheet.scss */
+#introduction .h3-rectangle {
+  margin-bottom: 30vh;
+  /*ずらした分のマージンだいぶ適当です*/
+  transform: translateY(50%);
+  border-radius: 43.2px;
+  border: solid 4px #51c191;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 138, stylesheet.scss */
+#introduction .h3-rectangle h3 {
+  color: #51c191;
+  font-family: "HiraKakuPro-W6";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 145, stylesheet.scss */
+#introduction .h3-rectangle .introduction-h3-image {
+  height: 80px;
+  width: auto;
+}
+
+/*about*/
+/* line 154, stylesheet.scss */
+#about .h2-p {
+  font-family: "HiraKakuPro-W3";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* line 159, stylesheet.scss */
+#about .rectangle {
+  height: 15rem;
+  border-radius: 26px;
+  border: solid 10px #ffffff;
+  background: #6dd2a5;
+  position: relative;
+}
+/* line 165, stylesheet.scss */
+#about .rectangle h3 {
+  color: #ffffff;
+  font-family: "HiraKakuPro-W6";
+  font-size: 1.75rem;
+  font-weight: 400;
+  border-bottom: solid 3px #ffffff;
+}
+/* line 173, stylesheet.scss */
+#about .rectangle:before {
+  content: "";
+  border-radius: 26px;
+  border: solid 1px #6dd2a5;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+}

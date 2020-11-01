@@ -1,0 +1,184 @@
+body,ul,li{
+	font-size:16px;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+
+li{
+	text-decoration-style:none;
+}
+
+/*h2一部共有*/
+h2{
+  	font-family: "HiraKakuPro-W6";
+  	font-size: 3.625rem;
+  	font-weight: 400;
+  	letter-spacing: 2px;
+}
+h2 span{
+	color: #51c191;
+}
+p.h2-above{
+	font-family: "HiraKakuPro-W6";
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 1.25rem;
+}
+
+/*中の要素を上下中央寄せ*/
+.div-center{
+	display: flex;
+	justify-content:center;
+  	align-items: center;
+
+}
+/*中の要素を下寄せ*/
+.div-bottom{
+	display: flex;
+	justify-content:center;
+	align-items: flex-end;
+}
+/*改行*/
+.br{
+	display:block;
+}
+
+/* header-nav*/
+#header-introduction{
+	background-image:url(image/header-background.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color:#6dd2a5;
+}
+
+header{
+	#header-logo{
+		width:auto;
+		height:33px;
+	}
+	ul{
+		width:100%;
+		display:flex;
+		justify-content:space-evenly;
+		list-style:none;
+		height:44px;
+
+		li.rectangle{
+			width: 12rem;
+			border-radius: 22px;
+		}
+		li.log-in{
+			border:solid 1.6px #ffffff;
+		}
+		li.account-create{
+			background: #ffb635;
+		}
+		a{
+			color:#fff;
+			font-family:"HiraKakuPro-W6";
+			font-size:1rem;
+		}
+		a:hover{
+			color:#fff;
+			text-decoration: none;
+		}
+		a.in-rectangle-font{
+		  	font-size: 0.875rem;
+		}
+	}
+}
+
+/*introduction*/
+#introduction{
+	margin-top:20vh;
+
+	p.h2{
+		color: #ffffff;
+		font-family: "HiraKakuPro-W6";
+		font-size: 3.5rem;
+		font-weight: 400;
+	}
+	p.h2-p{
+	  	color: #ffffff;
+	  	font-family: "HiraKakuPro-W3";
+	  	font-size: 25px;
+	  	font-weight: 400;
+	}
+	p#img-crown-p{
+		display:inline-block;
+		padding:10px 55px;
+	  	border-radius: 45px;
+	  	background: #ffffff;
+	  	box-shadow: 2px 2px 2px rgba(119,119,119,0.5);
+	  	color: #51c191;;
+	  	font-family: "ToppanBunkyuMidashiGothicStdN-ExtraBold";
+	  	font-size: 1.5rem;
+	  	font-weight: 400;
+	}
+	p.h3-rectangle-p{
+		color: #ffffff;
+		font-family: "HiraKakuPro-W3";
+		font-size: 2rem;
+		font-weight: 400;
+		text-align: center;	
+	}
+	.h3-rectangle{
+		margin-bottom:30vh;
+		/*ずらした分のマージンだいぶ適当です*/
+		transform:translateY(50%);
+	  	border-radius: 43.2px;
+	  	border: solid 4px #51c191;
+	  	background: #ffffff;
+	  	display:flex;
+	  	justify-content:space-evenly;
+
+	  	h3{
+		  	color: #51c191;
+		  	font-family: "HiraKakuPro-W6";
+		  	font-size: 20px;
+		  	font-weight: 400;
+		  	text-align: center;
+		}
+		.introduction-h3-image{
+			height:80px;
+			width:auto;
+		}
+	}
+}
+/*about*/
+#about{
+
+	.h2-p{
+		font-family: "HiraKakuPro-W3";
+ 		font-size: 1.5rem;
+ 		font-weight: 400;
+	}
+	.rectangle{
+		height:15rem;
+		border-radius: 26px;
+		border: solid 10px #ffffff;
+		background: #6dd2a5;
+		position:relative;
+		h3{
+			color: #ffffff;
+			font-family: "HiraKakuPro-W6";
+			font-size: 1.75rem;
+			font-weight: 400;
+			border-bottom: solid 3px #ffffff;
+		}
+	}
+	.rectangle:before{
+		content: "";
+		border-radius: 26px;
+		border: solid 1px #6dd2a5;
+		position: absolute;
+		top: -10px;
+		left:-10px;
+		width: calc(100% + 20px);
+		height: calc(100% + 20px);
+	}
+
+}
