@@ -38,8 +38,68 @@ p.h2-above {
   letter-spacing: 1.25rem;
 }
 
+/* line 30, stylesheet.scss */
+.background-green {
+  background-color: #6dd2a5;
+}
+
+/* line 33, stylesheet.scss */
+.border-green {
+  border-color: #6dd2a5;
+}
+
+/* line 36, stylesheet.scss */
+.background-yellow {
+  background-color: #ffde8b;
+}
+
+/* line 39, stylesheet.scss */
+.border-yellow {
+  border-color: #ffde8b;
+}
+
+/* line 42, stylesheet.scss */
+.background-red {
+  background-color: #ff9e8b;
+}
+
+/* line 45, stylesheet.scss */
+.border-red {
+  border-color: #ff9e8b;
+}
+
+/* line 48, stylesheet.scss */
+.background-blue {
+  background-color: #93bbff;
+}
+
+/* line 51, stylesheet.scss */
+.border-blue {
+  border-color: #93bbff;
+}
+
+/* line 54, stylesheet.scss */
+.background-lightblue {
+  background-color: #8bcfff;
+}
+
+/* line 57, stylesheet.scss */
+.border-lightblue {
+  border-color: #8bcfff;
+}
+
+/* line 60, stylesheet.scss */
+.background-orange {
+  background-color: #ffc68b;
+}
+
+/* line 63, stylesheet.scss */
+.border-orange {
+  border-color: #ffc68b;
+}
+
 /*中の要素を上下中央寄せ*/
-/* line 32, stylesheet.scss */
+/* line 68, stylesheet.scss */
 .div-center {
   display: flex;
   justify-content: center;
@@ -47,7 +107,7 @@ p.h2-above {
 }
 
 /*中の要素を下寄せ*/
-/* line 39, stylesheet.scss */
+/* line 75, stylesheet.scss */
 .div-bottom {
   display: flex;
   justify-content: center;
@@ -55,13 +115,13 @@ p.h2-above {
 }
 
 /*改行*/
-/* line 45, stylesheet.scss */
+/* line 81, stylesheet.scss */
 .br {
   display: block;
 }
 
 /* header-nav*/
-/* line 50, stylesheet.scss */
+/* line 86, stylesheet.scss */
 #header-introduction {
   background-image: url(image/header-background.png);
   background-repeat: no-repeat;
@@ -69,12 +129,12 @@ p.h2-above {
   background-color: #6dd2a5;
 }
 
-/* line 58, stylesheet.scss */
+/* line 94, stylesheet.scss */
 header #header-logo {
   width: auto;
   height: 33px;
 }
-/* line 62, stylesheet.scss */
+/* line 98, stylesheet.scss */
 header ul {
   width: 100%;
   display: flex;
@@ -82,55 +142,56 @@ header ul {
   list-style: none;
   height: 44px;
 }
-/* line 69, stylesheet.scss */
+/* line 105, stylesheet.scss */
 header ul li.rectangle {
   width: 12rem;
   border-radius: 22px;
 }
-/* line 73, stylesheet.scss */
+/* line 109, stylesheet.scss */
 header ul li.log-in {
   border: solid 1.6px #ffffff;
 }
-/* line 76, stylesheet.scss */
+/* line 112, stylesheet.scss */
 header ul li.account-create {
   background: #ffb635;
 }
-/* line 79, stylesheet.scss */
+/* line 115, stylesheet.scss */
 header ul a {
   color: #fff;
   font-family: "HiraKakuPro-W6";
   font-size: 1rem;
 }
-/* line 84, stylesheet.scss */
+/* line 120, stylesheet.scss */
 header ul a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 88, stylesheet.scss */
+/* line 124, stylesheet.scss */
 header ul a.in-rectangle-font {
   font-size: 0.875rem;
 }
 
 /*introduction*/
-/* line 95, stylesheet.scss */
+/* line 131, stylesheet.scss */
 #introduction {
   margin-top: 20vh;
+  margin-bottom: 30vh;
 }
-/* line 98, stylesheet.scss */
+/* line 135, stylesheet.scss */
 #introduction p.h2 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
   font-size: 3.5rem;
   font-weight: 400;
 }
-/* line 104, stylesheet.scss */
+/* line 141, stylesheet.scss */
 #introduction p.h2-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
   font-size: 25px;
   font-weight: 400;
 }
-/* line 110, stylesheet.scss */
+/* line 147, stylesheet.scss */
 #introduction p#img-crown-p {
   display: inline-block;
   padding: 10px 55px;
@@ -142,7 +203,7 @@ header ul a.in-rectangle-font {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 121, stylesheet.scss */
+/* line 158, stylesheet.scss */
 #introduction p.h3-rectangle-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
@@ -150,9 +211,8 @@ header ul a.in-rectangle-font {
   font-weight: 400;
   text-align: center;
 }
-/* line 128, stylesheet.scss */
+/* line 165, stylesheet.scss */
 #introduction .h3-rectangle {
-  margin-bottom: 30vh;
   /*ずらした分のマージンだいぶ適当です*/
   transform: translateY(50%);
   border-radius: 43.2px;
@@ -161,7 +221,7 @@ header ul a.in-rectangle-font {
   display: flex;
   justify-content: space-evenly;
 }
-/* line 138, stylesheet.scss */
+/* line 174, stylesheet.scss */
 #introduction .h3-rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -169,43 +229,146 @@ header ul a.in-rectangle-font {
   font-weight: 400;
   text-align: center;
 }
-/* line 145, stylesheet.scss */
-#introduction .h3-rectangle .introduction-h3-image {
+/* line 181, stylesheet.scss */
+#introduction .h3-rectangle i {
+  color: #6dd2a5;
   height: 80px;
   width: auto;
 }
 
 /*about*/
-/* line 154, stylesheet.scss */
+/* line 189, stylesheet.scss */
+#about {
+  margin-top: 20vh;
+}
+/* line 192, stylesheet.scss */
 #about .h2-p {
   font-family: "HiraKakuPro-W3";
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 159, stylesheet.scss */
+/* line 197, stylesheet.scss */
+#about .col-sm-6:before {
+  content: "";
+  border-radius: 26px;
+  border: solid 1px;
+  border-color: inherit;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+}
+/* line 208, stylesheet.scss */
 #about .rectangle {
-  height: 15rem;
+  height: 18rem;
   border-radius: 26px;
   border: solid 10px #ffffff;
-  background: #6dd2a5;
-  position: relative;
 }
-/* line 165, stylesheet.scss */
+/* line 212, stylesheet.scss */
 #about .rectangle h3 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
   font-size: 1.75rem;
   font-weight: 400;
   border-bottom: solid 3px #ffffff;
+  text-align: center;
 }
-/* line 173, stylesheet.scss */
+/* line 220, stylesheet.scss */
+#about .rectangle p {
+  color: #ffffff;
+  font-family: "HiraKakuPro-W3";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/* line 226, stylesheet.scss */
+#about .rectangle i {
+  color: #fff;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+/* line 234, stylesheet.scss */
+#about .rectangle:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  width: 15px;
+  height: 37px;
+  background-color: inherit;
+  transform: rotate(38deg);
+}
+/* line 244, stylesheet.scss */
 #about .rectangle:before {
   content: "";
-  border-radius: 26px;
-  border: solid 1px #6dd2a5;
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
+  top: 20px;
+  right: -5px;
+  width: 15px;
+  height: 37px;
+  background: inherit;
+  transform: rotate(63deg);
+}
+
+/* line 256, stylesheet.scss */
+#mind {
+  margin-top: 20vh;
+}
+/* line 259, stylesheet.scss */
+#mind .background-green {
+  padding: 15vh 0;
+}
+/* line 264, stylesheet.scss */
+#mind img.img-circle {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  border: solid 8px #51c191;
+  border-radius: 100px;
+}
+/* line 275, stylesheet.scss */
+#mind .balloon {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 4px #51c191;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+/* line 286, stylesheet.scss */
+#mind .balloon p {
+  margin: 0;
+  font-family: "SourceHanSans-Normal";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 295, stylesheet.scss */
+#mind .balloon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  margin-top: -48px;
+  border: 24px solid transparent;
+  border-right: 24px solid #FFF;
+  z-index: 2;
+}
+/* line 305, stylesheet.scss */
+#mind .balloon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  margin-top: -48px;
+  border: 24px solid transparent;
+  border-right: 24px solid #51c191;
+  z-index: 1;
 }

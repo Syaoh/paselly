@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" media="all" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/447269a3cf.js" crossorigin="anonymous"></script>
 
 
     <title>  PASELLY (パセリ) | 無料で顧客管理や書類作成ができるウェブサイトです</title>
@@ -42,6 +43,7 @@
 					<div>
 						<p class="h2"> 本業以外全部お任せ</p>
 						<p class="h2-p mb-5">営業から請求までのセールス/バックオフィス業務はすべてツールに任せましょう。</p>
+						<!--beforeで画像入れるかどうか-->
 						<img src ="image/kv_crown.png">
 						<p id="img-crown-p" class="m-3">CRM 導入実績No.1</p>
 					</div>
@@ -54,33 +56,33 @@
 
 			<p class ="h3-rectangle-p">会社立ち上げ、フリーランス、個人事業主が<span class="br">本業以外にやらないといけないことが大体できるツールです</span></p>
 			<div class="h3-rectangle p-4 row">
-				<div class="col-md-2 col-md-offset-1 text-center">
+				<div class="col-md-2 col-md-offset-1 text-center div-center">
 					<div>
-						<img class=" introduction-h3-image" src="image/introduction-forms.png">
+						<i class="fas fa-file-alt fa-5x"></i>
 						<h3 class="mt-3">フォームを<span class="br">作りたい</span></h3>
 					</div>
 				</div>
-				<div class="col-md-2 text-center">
+				<div class="col-md-2 text-center div-center">
 					<div>
-						<img class="introduction-h3-image" src="image/introduction-customer-list.png">
+						<i class="fas fa-file-invoice fa-5x"></i>
 						<h3 class="mt-3">顧客リストを <span class="br">管理したい<span></h3>
 					</div>
 				</div>
-				<div class="col-md-2 text-center">
+				<div class="col-md-2 text-center div-center">
 					<div>
-						<img class="introduction-h3-image" src="image/introduction-mail.png">
+						<i class="far fa-envelope fa-5x"></i>
 						<h3 class="mt-3">メールを<span class="br">一斉送信したい<span></h3>
 					</div>
 				</div>
-				<div class="col-md-2 text-center">
+				<div class="col-md-2 text-center div-center">
 					<div>
-						<img class="introduction-h3-image" src="image/introduction-clock.png">
+						<i class="fas fa-history fa-5x"></i>
 						<h3 class="mt-3">営業進捗を<span class="br">確認したい</span></h3>
 					</div>
 				</div>
-				<div class="col-md-2 text-center">
+				<div class="col-md-2 text-center div-center">
 					<div>
-						<img class="introduction-h3-image" src="image/introduction-document.png">
+						<i class="fas fa-file-signature fa-5x"></i>
 						<h3 class="mt-3">書類を<span class="br">作成したい</span></h3>
 					</div>
 				</div>
@@ -90,7 +92,7 @@
 
 	<div id="about" class="container">
 
-		<!--このAboutはhtmlにするかcssで書いちゃうか悩みました-->
+		<!--このpタグのAboutはhtmlにするかcssで書くか悩みました-->
 
 		<p class="h2-above text-center">About</p>
 
@@ -98,41 +100,53 @@
 		<p class ="h2-p text-center">やりたくないことを大抵やってくれるサイトです<span class="br">めんどくさいバックオフィス作業などはPASELLYに任せましょう</span></p>
 		<div class ="container">
 
-			<!--配置無視してます-->
+			<!--配置後回しにしています-->
 			<div class="row">
-				<div class ="col-sm-6">
-					<div class ="rectangle">
-						<h3 class="text-center m-3 p-1">問い合わせの管理をしたくない</h3>
-						<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-green">
+					<div class ="rectangle background-green">
+						<h3 class="m-3 p-1">問い合わせの管理をしたくない</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="fas fa-file-invoice fa-5x"></i>
 					</div>
 				</div>
-				<div class ="col-sm-6">
-					<div class ="rectangle">
-						<h3>問い合わせの管理をしたくない</h3>
-						<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-yellow">
+					<div class ="rectangle background-yellow">
+						<h3 class="m-3 p-1">顧客の管理をしたくない</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="fas fa-chart-line fa-5x"></i>
 					</div>
 				</div>
 			</div>
-
-
 			<div class="row">
-				<div>
-					<h3>問い合わせの管理をしたくない</h3>
-					<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-red">
+					<div class ="rectangle background-red">
+						<h3 class="m-3 p-1">メールの一斉がめんどくさい</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="far fa-envelope fa-5x"></i>
+					</div>
 				</div>
-				<div>
-					<h3>問い合わせの管理をしたくない</h3>
-					<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-blue">
+					<div class ="rectangle background-blue">
+						<h3 class="m-3 p-1">メールの一斉がめんどくさい</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="far fa-chart-bar fa-5x"></i>
+					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div>
-					<h3>問い合わせの管理をしたくない</h3>
-					<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-lightblue">
+					<div class ="rectangle background-lightblue">
+						<h3 class="m-3 p-1">請求書・見積書の作成が大変</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="fas fa-file-signature fa-5x"></i>
+					</div>
 				</div>
-				<div>
-					<h3>問い合わせの管理をしたくない</h3>
-					<p>やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+				<div class ="col-sm-6 p-4 border-orange">
+					<div class ="rectangle background-orange">
+						<h3 class="m-3 p-1">書類の受け取りが大変</h3>
+						<p class ="m-3">やりたくないことを大抵やってくれるサイトです。めんどくさいバックオフィス作業などはPASELLYに任せましょう</p>
+						<i class="fas fa-inbox fa-5x"></i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -141,8 +155,32 @@
 	</div>
 
 	<div id="mind">
-		<p>僕はバックオフィス業務が嫌いです。はじめは外注先が送ってくる請求書のフォーマットが毎回ばらばらで受け取りが面倒だったので、受け取りを楽にするためにPASELLYを作りました。徐々にユーザが増えてきて、書類発行だけではなく仕事をする上で面倒な、マーケティングやら営業、バックオフィス業務のほとんどを任せられるツールに仕上げていこうと思ってます。</p>
+		<p class="h2-above text-center">Mind</p>
+		<h2 class="text-center"><span>開</span>発者の想い</h2>
+		<div class ="background-green">
+			<div class="container">
+				<div class ="row">
+					<div class="col-sm-3 text-center div-center">
+						<div>
+							<img class="img-circle" src ="image/35345792_1777122612334858_6503982853095686144_o.png">
+							<!--リンク後回しにしてます -->
+							<span class="br my-3">
+								<img class="px-1" src ="image/twitter.png">
+								<img class="px-1" src ="image/facebook.png">
+							</span>
+
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="balloon p-4">
+							<p>僕はバックオフィス業務が嫌いです。はじめは外注先が送ってくる請求書のフォーマットが毎回ばらばらで受け取りが面倒だったので、受け取りを楽にするためにPASELLYを作りました。徐々にユーザが増えてきて、書類発行だけではなく仕事をする上で面倒な、マーケティングやら営業、バックオフィス業務のほとんどを任せられるツールに仕上げていこうと思ってます。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<div id="voice">
 		<h2>利用者の声</h2>
 		<p>今の所無料だし、発展途上中なのでとりあえず作った見ると良いと思いますよ。ユーザの声がダイレクトに開発に伝わるので自分専用の機能開発をしている気持ちになります。</p>
