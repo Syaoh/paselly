@@ -3,6 +3,13 @@ body,ul,li{
 	margin:0;
 	padding:0;
 }
+a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+a:visited{
+	color:#fff;
+}
 ul{
 	list-style:none;
 }
@@ -17,6 +24,7 @@ h2{
   	font-size: 3.625rem;
   	font-weight: 400;
   	letter-spacing: 2px;
+  	text-align:center;
 }
 h2 span{
 	color: #51c191;
@@ -26,6 +34,55 @@ p.h2-above{
 	font-size: 2rem;
 	font-weight: 400;
 	letter-spacing: 1.25rem;
+	text-align:center;
+}
+img.img-circle{
+	width: 200px;
+		height: 200px;
+		padding:0;
+		margin:0;
+		border: solid 8px #51c191;
+		border-radius:100px;
+}
+.balloon{
+	position: relative;
+	display: inline-block;
+	min-width: 120px;
+	max-width: 100%;
+	color: #555;
+	font-size: 16px;
+	background: #FFF;
+	border: solid 4px #51c191;
+	border-radius: 20px;
+	box-sizing: border-box;
+	p{
+		margin:0;
+		font-family: "SourceHanSans-Normal";
+		font-size: 1.5rem;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+.balloon:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -46px;
+	margin-top: -24px;
+	border: 24px solid transparent;
+	border-right: 24px solid #FFF;
+	z-index: 2;
+}
+.balloon:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -50px;
+	margin-top: -24px;
+	border: 24px solid transparent;
+	border-right: 24px solid #51c191;;
+	z-index: 1;
 }
 .background-green{
 	background-color:#6dd2a5;
@@ -191,7 +248,7 @@ header{
 
 	.h2-p{
 		font-family: "HiraKakuPro-W3";
- 		font-size: 1.5rem;
+ 		font-size: 1rem;
  		font-weight: 400;
 	}
 	.col-sm-6:before{
@@ -259,57 +316,257 @@ header{
 	.background-green{
 		padding:15vh 0;
 	}
+}
 
+#voice{
+	margin-top:20vh;
+}
 
-	img.img-circle{
-		width: 200px;
-  		height: 200px;
-  		padding:0;
-  		margin:0;
-  		border: solid 8px #51c191;
-  		border-radius:100px;
+#development{
+	margin-top:20vh;
+
+	h3{
+		width:200px;
+		margin:auto;
+		border-bottom: solid 3px #51c191;
+		font-family: "HiraKakuPro-W6";
+		font-size: 2.5rem;
+		font-weight: 400;
+		text-align:center;
 	}
-
-	img.icon{
+	p{
+		color:#555555;
+		font-family:"HiraKakuPro-W6";
+		font-size:1.75rem;
+		font-weight:400;
+		text-align:center;
 	}
-	.balloon{
-		position: relative;
-		display: inline-block;
-		min-width: 120px;
-		max-width: 100%;
-		color: #555;
-		font-size: 16px;
-		background: #FFF;
-		border: solid 4px #51c191;
-		border-radius: 20px;
-		box-sizing: border-box;
-		p{
-			margin:0;
-			font-family: "SourceHanSans-Normal";
-			font-size: 1.5rem;
-			font-weight: 400;
-			text-align: center;
+	.row{
+		counter-reset: number 0;
+		margin:10vh 0;
+
+		.rectangle{
+			margin:auto;
+			width:330px;
+			height:360px;
+			border-radius: 10px;
+			border: solid 4px #51c191;
+			text-align:center;
+
+			i{
+				font-size:6rem;
+				color:#51c191;	
+			}
+			h4{
+			  	color: #51c191;
+			  	font-family: "HiraKakuPro-W6";
+			  	font-size: 1.25rem;
+			  	font-weight: 400;
+			  	text-align: center;			
+			}
+			p{
+	  			color: #666666;
+	  			font-family: "HiraKakuPro-W3";
+	  			font-size: 1rem;
+	  			font-weight: 400;
+	  			text-align: center;
+	  			line-height: 1.5rem
+			}
+		}
+		.rectangle:before{
+			counter-increment: number 1;
+		    content: counter(number) " ";
+		    position: absolute;
+		    width: 43px;
+		    height: 43px;
+		    font-size: 1.25rem;
+		    font-weight: 400;
+		    top: -21.5px;
+		    left: calc(50% - 21.5px);
+		    background: #51c191;
+		    color: #fff;
+		    border-radius: 50%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.col-sm-3{
+			i{
+				font-size:5rem;
+			}
+			h4{
+				font-size:0.875rem;
+			}
+			p{
+				font-size:0.75rem;
+			}
+			.rectangle{
+				width: 240px;
+  				height: 260px;
+			}
+			.rectangle:before{
+				width:31px;
+				height:31px;
+				font-size:1rem;
+				top: -15.5px;
+				left: calc(50% - 15.5px);
+			}
+		}
+		.div-end{
+			position:absolute;
+			top :50px;
 		}
 	}
+}
 
-	.balloon:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: -46px;
-		margin-top: -48px;
-		border: 24px solid transparent;
-		border-right: 24px solid #FFF;
-		z-index: 2;
+#goal{
+	margin-top:20vh;
+
+	.row{
+		counter-reset: number 0;
+		position:relative;
+		border-bottom: solid 5px #6dd2a5;
+
 	}
-	.balloon:after {
+	.row:after{
+		display:block;
 		content: "";
-		position: absolute;
-		top: 50%;
-		left: -50px;
-		margin-top: -48px;
-		border: 24px solid transparent;
-		border-right: 24px solid #51c191;;
-		z-index: 1;
+		position:absolute;
+		right:-5px;
+		bottom:-17px;
+		 width: 0;
+	     height: 0;
+	     border-left: 15px solid #6dd2a5;
+	     border-top: 15px solid transparent;
+	     border-bottom: 15px solid transparent;
 	}
+	.rectangle{
+		border-radius: 26px;
+		border: double 8px #fff;
+		text-align:center;
+		height:400px;
+		i{
+			color:#fff;
+			opacity: 0.4;
+			font-size:5rem;
+		}
+		h3{
+			color: #ffffff;
+			font-family: "HiraKakuPro-W6";
+			font-size: 1.5rem;
+			font-weight: 400;
+			letter-spacing: 1.375px;
+		}
+		p{
+  			color: #ffffff;
+  			font-family: "SourceHanSans-Normal";
+  			font-size: 1rem;
+  			font-weight: 400;
+  			text-align: center;
+		}
+	}
+	.rectangle:before{
+		counter-increment: number 1;
+		content: counter(number) " ";
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		font-size: 1.25rem;
+		font-weight: 400;
+		top: -43px;
+		left: calc(50% - 21.5px);
+		background: inherit;
+		color: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	p{
+  		font-family: "SourceHanSans-Normal";
+  		font-size: 1.3rem;
+  		font-weight: 400;
+  		text-align: center;
+	}
+}
+
+#faq{
+	margin-top:10vh;
+	padding-top:10vh;
+	padding-bottom:10vh;
+	background-color:#f5f5f5;
+
+	.rectangle{
+	  	border-radius: 26px;
+	  	background: #ffffff;
+
+	 	p{
+	 		position:relative;
+	 		padding-left:75px;
+		  	font-family: "HiraKakuPro-W6";
+	  		font-size: 1.5rem;
+	  		font-weight: 400;
+	 	}
+	 	.answer{
+	 		border-top:solid 4px #ebf1f5;
+	 	}
+	 	.question p:before{
+	 		display: flex;
+			justify-content:center;
+  			align-items: center;
+	 		position:absolute;
+	 		top: 0;
+	 		left: 0;
+	 		content:"Q";
+	 		color:#fff;
+	 		width: 50px;
+		  	height: 50px;
+		  	text-align:center;
+		  	border-radius: 5px;
+		  	background: #6dd2a5;
+	 	}
+	 	.answer p:before{
+	 		display: flex;
+			justify-content:center;
+  			align-items: center;
+	 		position:absolute;
+	 		top: 0;
+	 		left: 0;
+	 		color:#000;
+	 		content:"A";
+	 		width: 50px;
+ 		 	height: 50px;
+  			border-radius: 5px;
+  			border: solid 3px ;
+  			text-align:center
+	 	}
+	}
+	a.inquiry{
+		display:block;
+		width: 450px;
+		margin:auto;
+		position:relative;
+		border-radius: 10px;
+		background: #33404e;
+  		color: #ffffff;
+  		font-family: "HiraKakuPro-W6";
+ 		font-size: 2rem;
+  		font-weight: 400;
+  		letter-spacing: 1.4137931px;
+	}
+	a.inquiry:after{
+		display:block;
+		content: "";
+		position:absolute;
+		top: calc(50% - 18px);
+		right:35px;
+		width: 0;
+	    height: 0;
+	    border-left: 15px solid #fff;
+	    border-top: 15px solid transparent;
+	    border-bottom: 15px solid transparent;
+	}
+}
+#cost{
+
 }
