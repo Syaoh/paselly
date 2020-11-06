@@ -244,107 +244,136 @@ img.img-circle {
 header {
   /*JSで変更後と思われる*/
 }
-/* line 189, stylesheet.scss */
-header #header-logo {
+/* line 190, stylesheet.scss */
+header .header-logo {
+  height: 100%;
   width: auto;
-  height: 33px;
 }
-/* line 193, stylesheet.scss */
-header ul {
+/* line 194, stylesheet.scss */
+header .navbar, header .row {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  height: 44px;
 }
-/* line 200, stylesheet.scss */
+/* line 197, stylesheet.scss */
+header .navbar {
+  margin: 0 auto;
+  background-color: #6dd2a5;
+  box-shadow: 0 2px 4px gray;
+}
+/* line 202, stylesheet.scss */
+header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'\a 		xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)'\a 		stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* line 207, stylesheet.scss */
+header ul {
+  height: 44px;
+  list-style: none;
+  text-align: center;
+}
+/* line 212, stylesheet.scss */
 header ul .rectangle {
+  display: block;
   width: 12rem;
+  padding: 0.5rem;
   border-radius: 22px;
 }
-/* line 204, stylesheet.scss */
+/* line 218, stylesheet.scss */
 header ul .log-in {
   border: solid 1.6px #ffffff;
 }
-/* line 207, stylesheet.scss */
+/* line 221, stylesheet.scss */
 header ul .account-create-header {
   background: #ffb635;
 }
-/* line 210, stylesheet.scss */
+/* line 224, stylesheet.scss */
 header ul a {
   color: #fff;
   font-family: "HiraKakuPro-W6";
   font-size: 1rem;
 }
-/* line 215, stylesheet.scss */
+/* line 229, stylesheet.scss */
 header ul a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 219, stylesheet.scss */
+/* line 233, stylesheet.scss */
 header ul a.in-rectangle-font {
   font-size: 0.875rem;
 }
-/* line 226, stylesheet.scss */
+/* line 237, stylesheet.scss */
+header .show ul {
+  background-color: #6dd2a5;
+  width: 100%;
+  height: 100%;
+}
+/* line 241, stylesheet.scss */
+header .show ul li {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0px;
+  z-index: 500;
+  background: #6dd2a5;
+}
+/* line 253, stylesheet.scss */
 header .nav-color-change a {
   color: #51c191;
 }
-/* line 229, stylesheet.scss */
+/* line 256, stylesheet.scss */
 header .nav-color-change a:hover {
   color: #51c191;
 }
-/* line 232, stylesheet.scss */
+/* line 259, stylesheet.scss */
 header .nav-color-change .log-in {
   border-color: #51c191;
 }
-/* line 235, stylesheet.scss */
+/* line 262, stylesheet.scss */
 header .nav-color-change .account-create-header a {
   color: #fff;
 }
 
 /*footer*/
-/* line 243, stylesheet.scss */
+/* line 270, stylesheet.scss */
 footer h2, footer h3, footer p, footer a {
   color: #fff;
   font-family: "HiraginoSans-W6";
   font-weight: 400;
   font-size: 1rem;
 }
-/* line 250, stylesheet.scss */
+/* line 277, stylesheet.scss */
 footer h2 {
   font-size: 2.5rem;
 }
-/* line 253, stylesheet.scss */
+/* line 280, stylesheet.scss */
 footer a {
   display: block;
 }
-/* line 256, stylesheet.scss */
+/* line 283, stylesheet.scss */
 footer a:before {
   content: "- ";
 }
 
 /*LPページ*/
 /*introduction*/
-/* line 264, stylesheet.scss */
+/* line 291, stylesheet.scss */
 #introduction {
-  margin-top: 20vh;
+  padding-top: 20vh;
   margin-bottom: 30vh;
 }
-/* line 268, stylesheet.scss */
+/* line 295, stylesheet.scss */
 #introduction p.h2 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
   font-size: 3.5rem;
   font-weight: 400;
 }
-/* line 274, stylesheet.scss */
+/* line 301, stylesheet.scss */
 #introduction p.h2-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
   font-size: 25px;
   font-weight: 400;
 }
-/* line 280, stylesheet.scss */
+/* line 307, stylesheet.scss */
 #introduction p#img-crown-p {
   display: inline-block;
   padding: 10px 55px;
@@ -356,7 +385,7 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 291, stylesheet.scss */
+/* line 318, stylesheet.scss */
 #introduction p.h3-rectangle-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
@@ -364,7 +393,12 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 298, stylesheet.scss */
+/* line 325, stylesheet.scss */
+#introduction img {
+  width: 100%;
+  height: auto;
+}
+/* line 329, stylesheet.scss */
 #introduction .h3-rectangle {
   /*ずらした分のマージンだいぶ適当です*/
   transform: translateY(50%);
@@ -374,7 +408,7 @@ footer a:before {
   display: flex;
   justify-content: space-evenly;
 }
-/* line 307, stylesheet.scss */
+/* line 338, stylesheet.scss */
 #introduction .h3-rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -382,7 +416,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 314, stylesheet.scss */
+/* line 345, stylesheet.scss */
 #introduction .h3-rectangle i {
   color: #6dd2a5;
   height: 80px;
@@ -390,17 +424,17 @@ footer a:before {
 }
 
 /*about*/
-/* line 322, stylesheet.scss */
+/* line 353, stylesheet.scss */
 #about {
   margin-top: 20vh;
 }
-/* line 325, stylesheet.scss */
+/* line 356, stylesheet.scss */
 #about .h2-p {
   font-family: "HiraKakuPro-W3";
   font-size: 1rem;
   font-weight: 400;
 }
-/* line 330, stylesheet.scss */
+/* line 361, stylesheet.scss */
 #about .col-sm-6:before {
   content: "";
   border-radius: 26px;
@@ -412,13 +446,13 @@ footer a:before {
   width: calc(100% - 48px);
   height: calc(100% - 48px);
 }
-/* line 341, stylesheet.scss */
+/* line 372, stylesheet.scss */
 #about .rectangle {
   height: 18rem;
   border-radius: 26px;
   border: solid 10px #ffffff;
 }
-/* line 345, stylesheet.scss */
+/* line 376, stylesheet.scss */
 #about .rectangle h3 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
@@ -427,14 +461,14 @@ footer a:before {
   border-bottom: solid 3px #ffffff;
   text-align: center;
 }
-/* line 353, stylesheet.scss */
+/* line 384, stylesheet.scss */
 #about .rectangle p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
   font-size: 1.25rem;
   font-weight: 400;
 }
-/* line 359, stylesheet.scss */
+/* line 390, stylesheet.scss */
 #about .rectangle i {
   color: #fff;
   opacity: 0.4;
@@ -442,7 +476,7 @@ footer a:before {
   bottom: 50px;
   left: 50px;
 }
-/* line 367, stylesheet.scss */
+/* line 398, stylesheet.scss */
 #about .rectangle:after {
   content: "";
   position: absolute;
@@ -453,7 +487,7 @@ footer a:before {
   background-color: inherit;
   transform: rotate(38deg);
 }
-/* line 377, stylesheet.scss */
+/* line 408, stylesheet.scss */
 #about .rectangle:before {
   content: "";
   position: absolute;
@@ -465,26 +499,26 @@ footer a:before {
   transform: rotate(63deg);
 }
 
-/* line 389, stylesheet.scss */
+/* line 420, stylesheet.scss */
 #mind {
   margin-top: 20vh;
 }
-/* line 392, stylesheet.scss */
+/* line 423, stylesheet.scss */
 #mind .background-green {
   margin-top: 5vh;
   padding: 15vh 0;
 }
 
-/* line 398, stylesheet.scss */
+/* line 429, stylesheet.scss */
 #voice {
   margin-top: 20vh;
 }
 
-/* line 402, stylesheet.scss */
+/* line 433, stylesheet.scss */
 #development {
   margin-top: 20vh;
 }
-/* line 405, stylesheet.scss */
+/* line 436, stylesheet.scss */
 #development p {
   color: #555555;
   font-family: "HiraKakuPro-W6";
@@ -492,26 +526,25 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 412, stylesheet.scss */
+/* line 443, stylesheet.scss */
 #development .row {
   counter-reset: number 0;
   margin: 10vh 0;
 }
-/* line 416, stylesheet.scss */
+/* line 447, stylesheet.scss */
 #development .row .rectangle {
   margin: auto;
-  width: 330px;
   height: 360px;
   border-radius: 10px;
   border: solid 4px #51c191;
   text-align: center;
 }
-/* line 424, stylesheet.scss */
+/* line 454, stylesheet.scss */
 #development .row .rectangle i {
   font-size: 6rem;
   color: #51c191;
 }
-/* line 428, stylesheet.scss */
+/* line 458, stylesheet.scss */
 #development .row .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -519,7 +552,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 435, stylesheet.scss */
+/* line 465, stylesheet.scss */
 #development .row .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -528,7 +561,7 @@ footer a:before {
   text-align: center;
   line-height: 1.5rem;
 }
-/* line 444, stylesheet.scss */
+/* line 474, stylesheet.scss */
 #development .row .rectangle:before {
   counter-increment: number 1;
   content: counter(number) " ";
@@ -546,24 +579,23 @@ footer a:before {
   justify-content: center;
   align-items: center;
 }
-/* line 462, stylesheet.scss */
+/* line 492, stylesheet.scss */
 #development .row .col-sm-3 i {
   font-size: 5rem;
 }
-/* line 465, stylesheet.scss */
+/* line 495, stylesheet.scss */
 #development .row .col-sm-3 h4 {
   font-size: 0.875rem;
 }
-/* line 468, stylesheet.scss */
+/* line 498, stylesheet.scss */
 #development .row .col-sm-3 p {
   font-size: 0.75rem;
 }
-/* line 471, stylesheet.scss */
+/* line 501, stylesheet.scss */
 #development .row .col-sm-3 .rectangle {
-  width: 240px;
   height: 260px;
 }
-/* line 475, stylesheet.scss */
+/* line 504, stylesheet.scss */
 #development .row .col-sm-3 .rectangle:before {
   width: 31px;
   height: 31px;
@@ -571,23 +603,23 @@ footer a:before {
   top: -15.5px;
   left: calc(50% - 15.5px);
 }
-/* line 483, stylesheet.scss */
+/* line 512, stylesheet.scss */
 #development .row .div-end {
   position: absolute;
   top: 50px;
 }
 
-/* line 490, stylesheet.scss */
+/* line 519, stylesheet.scss */
 #goal {
   margin-top: 20vh;
 }
-/* line 493, stylesheet.scss */
+/* line 522, stylesheet.scss */
 #goal .row {
   counter-reset: number 0;
   position: relative;
   border-bottom: solid 5px #6dd2a5;
 }
-/* line 499, stylesheet.scss */
+/* line 528, stylesheet.scss */
 #goal .row:after {
   display: block;
   content: "";
@@ -600,20 +632,20 @@ footer a:before {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
-/* line 511, stylesheet.scss */
+/* line 540, stylesheet.scss */
 #goal .rectangle {
   border-radius: 26px;
   border: double 8px #fff;
   text-align: center;
   height: 400px;
 }
-/* line 516, stylesheet.scss */
+/* line 545, stylesheet.scss */
 #goal .rectangle i {
   color: #fff;
   opacity: 0.4;
   font-size: 5rem;
 }
-/* line 521, stylesheet.scss */
+/* line 550, stylesheet.scss */
 #goal .rectangle h3 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
@@ -621,7 +653,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 1.375px;
 }
-/* line 528, stylesheet.scss */
+/* line 557, stylesheet.scss */
 #goal .rectangle p {
   color: #ffffff;
   font-family: "SourceHanSans-Normal";
@@ -629,7 +661,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 536, stylesheet.scss */
+/* line 565, stylesheet.scss */
 #goal .rectangle:before {
   counter-increment: number 1;
   content: counter(number) " ";
@@ -647,7 +679,7 @@ footer a:before {
   justify-content: center;
   align-items: center;
 }
-/* line 553, stylesheet.scss */
+/* line 582, stylesheet.scss */
 #goal p {
   font-family: "SourceHanSans-Normal";
   font-size: 1.3rem;
@@ -655,7 +687,7 @@ footer a:before {
   text-align: center;
 }
 
-/* line 561, stylesheet.scss */
+/* line 590, stylesheet.scss */
 #faq {
   margin-top: 10vh;
   padding-top: 10vh;
@@ -663,12 +695,12 @@ footer a:before {
   background-color: #f5f5f5;
   border-radius: 45px;
 }
-/* line 568, stylesheet.scss */
+/* line 597, stylesheet.scss */
 #faq .rectangle {
   border-radius: 26px;
   background: #ffffff;
 }
-/* line 572, stylesheet.scss */
+/* line 601, stylesheet.scss */
 #faq .rectangle p {
   position: relative;
   padding-left: 75px;
@@ -676,11 +708,11 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 579, stylesheet.scss */
+/* line 608, stylesheet.scss */
 #faq .rectangle .answer {
   border-top: solid 4px #ebf1f5;
 }
-/* line 582, stylesheet.scss */
+/* line 611, stylesheet.scss */
 #faq .rectangle .question p:before {
   display: flex;
   justify-content: center;
@@ -696,7 +728,7 @@ footer a:before {
   border-radius: 5px;
   background: #6dd2a5;
 }
-/* line 597, stylesheet.scss */
+/* line 626, stylesheet.scss */
 #faq .rectangle .answer p:before {
   display: flex;
   justify-content: center;
@@ -712,10 +744,9 @@ footer a:before {
   border: solid 3px;
   text-align: center;
 }
-/* line 613, stylesheet.scss */
+/* line 642, stylesheet.scss */
 #faq a.inquiry {
-  display: block;
-  width: 450px;
+  padding: 1rem 4rem;
   margin: auto;
   position: relative;
   border-radius: 10px;
@@ -726,13 +757,13 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 1.4137931px;
 }
-/* line 626, stylesheet.scss */
+/* line 654, stylesheet.scss */
 #faq a.inquiry:after {
-  display: block;
+  display: inline-block;
   content: "";
   position: absolute;
   top: calc(50% - 18px);
-  right: 35px;
+  right: 1rem;
   width: 0;
   height: 0;
   border-left: 15px solid #fff;
@@ -740,16 +771,16 @@ footer a:before {
   border-bottom: 15px solid transparent;
 }
 
-/* line 639, stylesheet.scss */
+/* line 667, stylesheet.scss */
 #cost {
   margin-top: 20vh;
 }
-/* line 642, stylesheet.scss */
+/* line 670, stylesheet.scss */
 #cost .background-green {
   margin-top: 10vh;
   padding: 10vh 0;
 }
-/* line 646, stylesheet.scss */
+/* line 674, stylesheet.scss */
 #cost p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
@@ -758,7 +789,7 @@ footer a:before {
   line-height: 2rem;
   text-align: center;
 }
-/* line 655, stylesheet.scss */
+/* line 683, stylesheet.scss */
 #cost .rectangle {
   border-radius: 15px;
   border: solid 3px #ffffff;
@@ -767,36 +798,36 @@ footer a:before {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 663, stylesheet.scss */
+/* line 691, stylesheet.scss */
 #cost .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
   font-size: 1.75rem;
   font-weight: 400;
 }
-/* line 669, stylesheet.scss */
+/* line 697, stylesheet.scss */
 #cost .rectangle p {
   color: #51c191;
   font-size: 1rem;
 }
-/* line 673, stylesheet.scss */
+/* line 701, stylesheet.scss */
 #cost .rectangle p.price {
   font-size: 2rem;
   border-bottom: solid 3px #51c191;
 }
 
-/* line 680, stylesheet.scss */
+/* line 708, stylesheet.scss */
 #function-list {
   margin-top: 20vh;
 }
-/* line 683, stylesheet.scss */
+/* line 711, stylesheet.scss */
 #function-list table {
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
 }
-/* line 690, stylesheet.scss */
+/* line 718, stylesheet.scss */
 #function-list table tr td {
   padding: 1.25rem 2.5rem;
   border: solid 1px #979797;
@@ -806,30 +837,30 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 699, stylesheet.scss */
+/* line 727, stylesheet.scss */
 #function-list table tr td:first-child {
   border-left: none;
   vertical-align: top;
 }
-/* line 703, stylesheet.scss */
+/* line 731, stylesheet.scss */
 #function-list table tr td:last-child {
   border-right: none;
 }
-/* line 707, stylesheet.scss */
+/* line 735, stylesheet.scss */
 #function-list table tr:first-child td {
   border-top: none;
 }
 
-/* line 713, stylesheet.scss */
+/* line 741, stylesheet.scss */
 .dushboard {
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
-/* line 717, stylesheet.scss */
+/* line 745, stylesheet.scss */
 .dushboard .underscore {
   border-bottom: solid 3px #51c191;
 }
-/* line 721, stylesheet.scss */
+/* line 749, stylesheet.scss */
 .dushboard h3 {
   display: inline-block;
   padding-left: 5rem;
@@ -838,7 +869,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 729, stylesheet.scss */
+/* line 757, stylesheet.scss */
 .dushboard p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -846,27 +877,27 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 736, stylesheet.scss */
+/* line 764, stylesheet.scss */
 .dushboard img {
   width: 100%;
   height: auto;
 }
-/* line 740, stylesheet.scss */
+/* line 768, stylesheet.scss */
 .dushboard i {
   display: inline-block;
   font-size: 2.5rem;
 }
 
-/* line 746, stylesheet.scss */
+/* line 774, stylesheet.scss */
 #documents {
   margin-top: 10vh;
 }
-/* line 750, stylesheet.scss */
+/* line 778, stylesheet.scss */
 #documents img {
   width: 100%;
   height: auto;
 }
-/* line 754, stylesheet.scss */
+/* line 782, stylesheet.scss */
 #documents p {
   color: #666666;
   font-family: "HiraKakuPro-W6";
@@ -875,11 +906,11 @@ footer a:before {
   text-align: center;
 }
 
-/* line 764, stylesheet.scss */
+/* line 792, stylesheet.scss */
 #function-ditails {
   margin-top: 10vh;
 }
-/* line 768, stylesheet.scss */
+/* line 796, stylesheet.scss */
 #function-ditails h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -887,19 +918,19 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 775, stylesheet.scss */
+/* line 803, stylesheet.scss */
 #function-ditails .rectangle {
   height: 20rem;
   border-radius: 15px;
   border: solid 3px #51c191;
   text-align: center;
 }
-/* line 780, stylesheet.scss */
+/* line 808, stylesheet.scss */
 #function-ditails .rectangle i {
   font-size: 5rem;
   color: #51c191;
 }
-/* line 784, stylesheet.scss */
+/* line 812, stylesheet.scss */
 #function-ditails .rectangle h4 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -907,7 +938,7 @@ footer a:before {
   font-weight: 400;
   border-bottom: solid 3px #51c191;
 }
-/* line 791, stylesheet.scss */
+/* line 819, stylesheet.scss */
 #function-ditails .rectangle p {
   color: #51c191;
   font-family: "HiraKakuPro-W3";
@@ -916,26 +947,26 @@ footer a:before {
   line-height: 2rem;
 }
 
-/* line 801, stylesheet.scss */
+/* line 829, stylesheet.scss */
 #example {
   margin-top: 10vh;
 }
-/* line 805, stylesheet.scss */
+/* line 833, stylesheet.scss */
 #example .gradient-green {
   background: linear-gradient(180deg, #fff 0%, #fff 20%, #51c191 20%, #51c191 100%);
 }
-/* line 808, stylesheet.scss */
+/* line 836, stylesheet.scss */
 #example .rectangle {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   background: #fff;
 }
-/* line 813, stylesheet.scss */
+/* line 841, stylesheet.scss */
 #example .rectangle img {
   width: 100%;
   height: auto;
 }
-/* line 818, stylesheet.scss */
+/* line 846, stylesheet.scss */
 #example .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -945,7 +976,7 @@ footer a:before {
   text-align: center;
   border-bottom: solid 3px #51c191;
 }
-/* line 827, stylesheet.scss */
+/* line 855, stylesheet.scss */
 #example .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -954,12 +985,12 @@ footer a:before {
   line-height: 1.75rem;
 }
 
-/* line 837, stylesheet.scss */
+/* line 865, stylesheet.scss */
 .contact {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-/* line 841, stylesheet.scss */
+/* line 869, stylesheet.scss */
 .contact .rectangle {
   text-align: center;
   border-radius: 15px;
@@ -969,14 +1000,14 @@ footer a:before {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 849, stylesheet.scss */
+/* line 877, stylesheet.scss */
 .contact .rectangle h3 {
   color: #050505;
   font-family: "HiraKakuPro-W6";
   font-size: 2.5rem;
   font-weight: 400;
 }
-/* line 855, stylesheet.scss */
+/* line 883, stylesheet.scss */
 .contact .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -984,7 +1015,7 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 862, stylesheet.scss */
+/* line 890, stylesheet.scss */
 .contact .rectangle a {
   display: inline-block;
   padding: 1rem 10rem;
@@ -1000,7 +1031,7 @@ footer a:before {
 /* LPページ終わり*/
 /* ~~~~~~~~~~~~~~~~~~~~*/
 /* お知らせ */
-/* line 883, stylesheet.scss */
+/* line 911, stylesheet.scss */
 #top-heading h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
@@ -1009,11 +1040,11 @@ footer a:before {
   letter-spacing: 0.4px;
 }
 
-/* line 891, stylesheet.scss */
+/* line 919, stylesheet.scss */
 #notice {
   margin-bottom: 20vh;
 }
-/* line 895, stylesheet.scss */
+/* line 923, stylesheet.scss */
 #notice #maincontent h3 {
   color: #050505;
   font-family: "HiraginoSans-W6";
@@ -1021,7 +1052,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.4px;
 }
-/* line 902, stylesheet.scss */
+/* line 930, stylesheet.scss */
 #notice #maincontent p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1029,12 +1060,12 @@ footer a:before {
   font-weight: 400;
   line-height: 1.75rem;
 }
-/* line 909, stylesheet.scss */
+/* line 937, stylesheet.scss */
 #notice #maincontent img {
   width: 100%;
   height: auto;
 }
-/* line 915, stylesheet.scss */
+/* line 943, stylesheet.scss */
 #notice #sidebar h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1043,7 +1074,7 @@ footer a:before {
   font-size: 1.25rem;
   font-weight: 400;
 }
-/* line 923, stylesheet.scss */
+/* line 951, stylesheet.scss */
 #notice #sidebar a {
   position: relative;
   padding-top: 1rem;
@@ -1056,17 +1087,17 @@ footer a:before {
   letter-spacing: 0.6px;
   border-bottom: solid 1px #e6e6e6;
 }
-/* line 937, stylesheet.scss */
+/* line 965, stylesheet.scss */
 #notice #sidebar #category a:after {
   content: "＞";
   position: absolute;
   right: 1rem;
 }
-/* line 943, stylesheet.scss */
+/* line 971, stylesheet.scss */
 #notice #sidebar #NewArticles {
   margin-top: 10vh;
 }
-/* line 946, stylesheet.scss */
+/* line 974, stylesheet.scss */
 #notice #sidebar #NewArticles a {
   padding-bottom: 3rem;
 }
@@ -1074,7 +1105,7 @@ footer a:before {
 /* お知らせ終わり */
 /*~~~~~~~~~~~~~~~~~*/
 /* ページ名がわからなかったので適当にid,class名つけてます */
-/* line 958, stylesheet.scss */
+/* line 986, stylesheet.scss */
 #introduction2 {
   width: 100%;
   height: 100%;
@@ -1084,7 +1115,7 @@ footer a:before {
   text-align: center;
   /*ここのクラス名適当です*/
 }
-/* line 966, stylesheet.scss */
+/* line 994, stylesheet.scss */
 #introduction2 h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
@@ -1092,7 +1123,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.7px;
 }
-/* line 973, stylesheet.scss */
+/* line 1001, stylesheet.scss */
 #introduction2 p {
   color: #ffffff;
   font-family: "HiraginoSans-W3";
@@ -1100,7 +1131,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.26px;
 }
-/* line 982, stylesheet.scss */
+/* line 1010, stylesheet.scss */
 #introduction2 a {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1111,19 +1142,19 @@ footer a:before {
   font-size: 1.5rem;
   position: relative;
 }
-/* line 992, stylesheet.scss */
+/* line 1020, stylesheet.scss */
 #introduction2 a:after {
   content: "＞";
   position: absolute;
   right: 1rem;
 }
-/* line 998, stylesheet.scss */
+/* line 1026, stylesheet.scss */
 #introduction2 .a1 {
   background: #ffffff;
   box-shadow: 2px 2px 2px rgba(119, 119, 119, 0.5);
   color: #51c191;
 }
-/* line 1003, stylesheet.scss */
+/* line 1031, stylesheet.scss */
 #introduction2 .a2 {
   background: #ffb635;
   box-shadow: -2px -3px 4px rgba(255, 255, 255, 0.5);
@@ -1131,12 +1162,12 @@ footer a:before {
   color: #fff;
 }
 
-/* line 1011, stylesheet.scss */
+/* line 1039, stylesheet.scss */
 #cost2 {
   margin-top: 10vh;
   margin-bottom: 30vh;
 }
-/* line 1015, stylesheet.scss */
+/* line 1043, stylesheet.scss */
 #cost2 h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -1144,14 +1175,14 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 1022, stylesheet.scss */
+/* line 1050, stylesheet.scss */
 #cost2 h4 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 1028, stylesheet.scss */
+/* line 1056, stylesheet.scss */
 #cost2 p {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1161,32 +1192,32 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 1037, stylesheet.scss */
+/* line 1065, stylesheet.scss */
 #cost2 img {
   width: 100%;
   height: auto;
 }
-/* line 1041, stylesheet.scss */
+/* line 1069, stylesheet.scss */
 #cost2 .row {
   margin-top: 20vh;
   position: relative;
 }
-/* line 1045, stylesheet.scss */
+/* line 1073, stylesheet.scss */
 #cost2 .col-right {
   position: absolute;
   right: 5rem;
 }
 
-/* line 1050, stylesheet.scss */
+/* line 1078, stylesheet.scss */
 #function-list2 {
   margin-top: 10vh;
   text-align: center;
 }
-/* line 1054, stylesheet.scss */
+/* line 1082, stylesheet.scss */
 #function-list2 .row {
   margin: 10vh 0;
 }
-/* line 1058, stylesheet.scss */
+/* line 1086, stylesheet.scss */
 #function-list2 .circle {
   margin-left: auto;
   margin-right: auto;
@@ -1196,12 +1227,12 @@ footer a:before {
   border-radius: 50%;
   text-align: center;
 }
-/* line 1066, stylesheet.scss */
+/* line 1094, stylesheet.scss */
 #function-list2 .circle i {
   color: #fff;
   font-size: 4rem;
 }
-/* line 1071, stylesheet.scss */
+/* line 1099, stylesheet.scss */
 #function-list2 .circle2 {
   margin-left: auto;
   margin-right: auto;
@@ -1212,12 +1243,12 @@ footer a:before {
   border-radius: 50%;
   text-align: center;
 }
-/* line 1080, stylesheet.scss */
+/* line 1108, stylesheet.scss */
 #function-list2 .circle2 i {
   color: #51c191;
   font-size: 4rem;
 }
-/* line 1085, stylesheet.scss */
+/* line 1113, stylesheet.scss */
 #function-list2 h3 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1226,7 +1257,7 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 1093, stylesheet.scss */
+/* line 1121, stylesheet.scss */
 #function-list2 p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1235,7 +1266,7 @@ footer a:before {
   line-height: 2rem;
 }
 
-/* line 1102, stylesheet.scss */
+/* line 1130, stylesheet.scss */
 #introduction-faq {
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -1245,14 +1276,14 @@ footer a:before {
   background-size: cover;
   text-align: center;
 }
-/* line 1110, stylesheet.scss */
+/* line 1138, stylesheet.scss */
 #introduction-faq h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
   font-size: 4rem;
   font-weight: 400;
 }
-/* line 1116, stylesheet.scss */
+/* line 1144, stylesheet.scss */
 #introduction-faq p {
   color: #ffffff;
   font-family: "HiraginoSans-W3";
@@ -1261,19 +1292,19 @@ footer a:before {
   line-height: 3rem;
 }
 
-/* line 1125, stylesheet.scss */
+/* line 1153, stylesheet.scss */
 #faq2 {
   margin-top: 10vh;
 }
-/* line 1128, stylesheet.scss */
+/* line 1156, stylesheet.scss */
 #faq2 .container {
   margin-top: 10vh;
 }
-/* line 1132, stylesheet.scss */
+/* line 1160, stylesheet.scss */
 #faq2 h2 {
   margin-bottom: 10vh;
 }
-/* line 1135, stylesheet.scss */
+/* line 1163, stylesheet.scss */
 #faq2 h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1283,7 +1314,7 @@ footer a:before {
   font-weight: 400;
   border-bottom: solid 1px #51c191;
 }
-/* line 1144, stylesheet.scss */
+/* line 1172, stylesheet.scss */
 #faq2 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1292,18 +1323,18 @@ footer a:before {
   font-size: 1rem;
   font-weight: 400;
 }
-/* line 1152, stylesheet.scss */
+/* line 1180, stylesheet.scss */
 #faq2 p:before {
   content: "・";
 }
-/* line 1155, stylesheet.scss */
+/* line 1183, stylesheet.scss */
 #faq2 a {
   margin-top: 3rem;
   display: block;
   color: #51c191;
   text-align: right;
 }
-/* line 1161, stylesheet.scss */
+/* line 1189, stylesheet.scss */
 #faq2 a:after {
   content: "　＞＞";
 }
