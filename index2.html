@@ -10,7 +10,7 @@
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- BootstrapのCSS読み込み -->
   <link rel="stylesheet" media="all" href="stylesheet.css">
   <script src="https://kit.fontawesome.com/447269a3cf.js" crossorigin="anonymous"></script>
@@ -21,23 +21,42 @@
 
 <body>
   <header>
-    <nav class="navbar nav-color-change">
-      <div class="container">
-        <ul>
-          <li class="div-bottom">
-            <h1><a href="#"><img alt="logo" id="header-logo" src="image/logo.png"></a></h1>
-          </li>
-          <li class="div-bottom"><a href="#">機能紹介</a></li>
-          <li class="div-bottom"><a href="#">料金プラン</a></li>
-          <li class="div-bottom"><a href="#">お知らせ</a></li>
-          <li class="div-bottom"><a href="#">開発ロードマップ</a></li>
-          <li class="div-center rectangle log-in"><a class="in-rectangle-font" href="#">ログインする</a></li>
-          <li class="div-center rectangle account-create-header"><a class="in-rectangle-font" href="#">アカウントを作成する</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+      <nav class="navbar navbar-expand-xl nav-color-change">
+        <div class="container">
+            <h1 class="div-center">
+              <a class="navbar-brand" href="#">
+                <img alt="logo" class="header-logo" src="image/logo.png">
+              </a>
+            </h1>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active div-center mx-2">
+                      <a href="#">機能紹介</a>
+                    </li>
+                    <li class="nav-item div-center mx-2">
+                      <a href="#">料金プラン</a>
+                    </li>
+                    <li class="nav-item div-center mx-2">
+                      <a href="#">お知らせ</a>
+                    </li>
+                    <li class="nav-item div-center mx-2">
+                      <a href="#">開発ロードマップ</a>
+                    </li>
+                    <li class="nav-item div-center mx-2">
+                      <a class="rectangle log-in" href="#">ログインする</a>
+                    </li>
+                    <li class="nav-item div-center mx-2">
+                      <a class="rectangle account-create-header" href="#">アカウントを作成する</a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+    </header>
 
   <!-- ヘッダー固定すると思いますが、一応まだしてないので若干ずれています これより下id・class名かなり適当です-->
 
@@ -56,7 +75,7 @@
       <h2 class="h2-2">料金携帯</h2>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <!--01. 02. before要素かhtmlか悩みました、とりあえずhtmlにしておきます-->
         <h3>01.データ名をもとにコンサルティング</h3>
         <div class="background-green p-5">
@@ -73,7 +92,7 @@
       <div class="col-sm-4">
         <img alt="point2" src="image/recruit-spirit-img.png">
       </div>
-      <div class="col-sm-8 col-right">
+      <div class="col-md-8 col-right">
         <!--01. 02. before要素かhtmlか悩みました、とりあえずhtmlにしておきます-->
         <h3>01.データ名をもとにコンサルティング</h3>
         <div class="background-green p-5">
@@ -90,21 +109,21 @@
       <h2 class="h2-2">機能一覧</h2>
     </div>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="circle div-center">
           <i class="fas fa-file-alt"></i>
         </div>
         <h3>問い合わせフォームを作る</h3>
         <p>スタンプカードアプリで管理するから忘れることなく貯められる！</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4 mt-5 mt-md-0">
         <div class="circle div-center">
           <i class="fas fa-history"></i>
         </div>
         <h3>進捗管理する</h3>
         <p>スタンプカードアプリで管理するから忘れることなく貯められる！</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4 mt-5 mt-md-0">
         <div class="circle div-center">
           <i class="fas fa-file-signature"></i>
         </div>
@@ -112,22 +131,22 @@
         <p>スタンプカードアプリで管理するから忘れることなく貯められる！</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
+    <div class="row mt-5">
+      <div class="col-md-4">
         <div class="circle2 div-center">
           <i class="fas fa-file-alt"></i>
         </div>
         <h3>問い合わせフォームを作る</h3>
         <p>スタンプカードアプリで管理するから忘れることなく貯められる！</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4 mt-5 mt-md-0">
         <div class="circle2 div-center">
           <i class="fas fa-history"></i>
         </div>
         <h3>進捗管理する</h3>
         <p>スタンプカードアプリで管理するから忘れることなく貯められる！</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4 mt-5 mt-md-0">
         <div class="circle2 div-center">
           <i class="fas fa-file-signature"></i>
         </div>
@@ -142,31 +161,31 @@
   <footer class="background-green mt-5">
     <div class="container pt-5 pb-1">
       <div class="row py-5">
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <h2 class="mb-4">PASELLY</h2>
           <p>〒106-6239</p>
           <p>東京都港区六本木3-2-1</p>
           <p>住友不動産六本木グラウンドタワー 39F</p>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2">
           <h3>PASERLLYとは</h3>
           <a href="#" class="py-2">PASELLYの特徴</a>
           <a href="#" class="py-2">機能一覧</a>
           <a href="#" class="py-2">セキュリティ</a>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2">
           <h3>料金について</h3>
           <a href="#" class="py-2">PASELLYの特徴</a>
           <a href="#" class="py-2">機能一覧</a>
           <a href="#" class="py-2">セキュリティ</a>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2">
           <h3>導入事例</h3>
           <a href="#" class="py-2">PASELLYの特徴</a>
           <a href="#" class="py-2">機能一覧</a>
           <a href="#" class="py-2">セキュリティ</a>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2">
           <h3>PASELLYとは</h3>
           <a href="#" class="py-2">PASELLYの特徴</a>
           <a href="#" class="py-2">機能一覧</a>
