@@ -222,10 +222,12 @@ img.img-circle{
 
 /* LPページトップ背景*/
 #header-introduction{
-	background-image:url(image/header-background.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 	background-color:#6dd2a5;
+}
+@media screen and (max-width:768px) {
+	#header-introduction{
+		padding-bottom:10vh;
+	}
 }
 /* header*/
 header{
@@ -346,9 +348,6 @@ footer{
 /*introduction*/
 #introduction{
 	padding-top:20vh;
-	margin-bottom:30vh;
-
-	
 
 	p.h2{
 		color: #ffffff;
@@ -1301,7 +1300,10 @@ footer{
 }
 #cost2{
 	margin-top:10vh;
-	margin-bottom:30vh;
+
+	.row{
+		margin-top:10vh;
+	}
 
 	h3{
   		color: #51c191;
@@ -1329,13 +1331,16 @@ footer{
 		width:100%;
 		height:auto;
 	}
-	.row{
-		margin-top:20vh;
-		position:relative;
-	}
-	.col-right{
-		position:absolute;
-		right:5rem;
+	@media screen and (max-width:768px){
+		h3{
+			font-size:1.5rem
+		}
+		h4{
+			font-size:1.25rem;
+		}
+		p{
+			font-size:1rem;
+		}
 	}
 }
 #function-list2{
