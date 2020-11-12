@@ -513,6 +513,14 @@ footer{
 			}
 		}
 	}
+	@media screen and (max-width:768px) {
+		.rectangle:after{
+			display:none;
+		}
+		.rectangle:before{
+			display:none;
+		}
+	}
 	@media screen and (max-width:576px) {
 		.rectangle{
 			h3{
