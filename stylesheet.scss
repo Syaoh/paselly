@@ -28,7 +28,6 @@ h2{
   	font-family: "HiraKakuPro-W6";
   	font-weight: 400;
 }
-
 .h2-1{
 	font-size: 3.625rem;
 	letter-spacing: 2px;
@@ -36,6 +35,31 @@ h2{
 	span{
 		color: #51c191;
 		}
+}
+p.h2-above{
+	font-family: "HiraKakuPro-W6";
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 1.25rem;
+	text-align:center;
+}
+@media screen and (max-width:768px) {
+	.h2-1{
+		font-size:2rem;
+	}
+	p.h2-above{
+		font-size:1.5rem;
+		letter-spacing:1rem;
+	}
+}
+@media screen and (max-width:576px) {
+	.h2-1{
+		font-size:1.5rem;
+	}
+	p.h2-above{
+		font-size:1rem;
+		letter-spacing:0.75rem;
+	}
 }
 .h2-2{
 	display:inline-block;
@@ -46,13 +70,12 @@ h2{
 	border-bottom: solid 3px #51c191;
 	font-size: 2.5rem;
 }
-
-p.h2-above{
-	font-family: "HiraKakuPro-W6";
-	font-size: 2rem;
-	font-weight: 400;
-	letter-spacing: 1.25rem;
-	text-align:center;
+@media screen and (max-width:576px) {
+	.h2-2{
+		padding-left:2rem;
+		padding-right:2rem;
+		font-size:2rem;
+	}	
 }
 /*アカウント作成リンク*/
 .account-create{
@@ -70,12 +93,19 @@ p.h2-above{
   		font-size: 1.5rem;
   		font-weight: 400;
 	}
+	@media screen and (max-width:768px){
+		a{
+			padding:0.5rem 3rem;
+			font-size:1rem;
+		}
+	}
 }
 
 /*円形画像*/
 img.img-circle{
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	max-width:200px;
+	height: auto;
 	padding:0;
 	margin:0;
 	border: solid 8px #51c191;
@@ -89,7 +119,6 @@ img.img-circle{
 	min-width: 120px;
 	max-width: 100%;
 	color: #555;
-	font-size: 16px;
 	background: #FFF;
 	border: solid 4px #51c191;
 	border-radius: 20px;
@@ -121,6 +150,20 @@ img.img-circle{
 	border: 24px solid transparent;
 	border-right: 24px solid #51c191;;
 	z-index: 1;
+}
+@media screen and (max-width:992px) {
+	.balloon:before {
+		display:none;
+	}
+	.balloon:after{
+		display:none;
+	}
+}
+@media screen and (max-width:768px) {
+	.balloon
+	 p{
+		font-size:1rem;
+	}
 }
 .background-green{
 	background-color:#6dd2a5;
@@ -179,10 +222,12 @@ img.img-circle{
 
 /* LPページトップ背景*/
 #header-introduction{
-	background-image:url(image/header-background.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 	background-color:#6dd2a5;
+}
+@media screen and (max-width:768px) {
+	#header-introduction{
+		padding-bottom:10vh;
+	}
 }
 /* header*/
 header{
@@ -249,19 +294,33 @@ header{
 
 	/*JSで変更後と思われる*/
 	.nav-color-change{ 
-		a{
-			color:#51c191;
-		}
-		a:hover{
-			color:#51c191;
-		}
-		.log-in{
-			border-color:#51c191;
-		}
-		.account-create-header a{
-			color:#fff;
-		}
+		background-color:#ffffff !important;
 
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
+			xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 193, 145, 1)'
+			stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+		}
+		ul{
+			a{
+				color:#51c191;
+			}
+			a:hover{
+				color:#51c191;
+			}
+			.log-in{
+				border-color:#51c191;
+			}
+			a.account-create-header{
+				color:#fff;
+			}
+		}
+		.show ul{
+		background-color:#fff;
+		li{
+			background:#fff;
+		}
+	}
 	}
 }
 /*footer*/
@@ -289,23 +348,25 @@ footer{
 /*introduction*/
 #introduction{
 	padding-top:20vh;
-	margin-bottom:30vh;
 
 	p.h2{
 		color: #ffffff;
 		font-family: "HiraKakuPro-W6";
-		font-size: 3.5rem;
+		font-size: 3rem;
 		font-weight: 400;
 	}
 	p.h2-p{
 	  	color: #ffffff;
 	  	font-family: "HiraKakuPro-W3";
-	  	font-size: 25px;
+	  	font-size: 1.5rem;
 	  	font-weight: 400;
+	}
+	img#crown{
+		text-align:center;
 	}
 	p#img-crown-p{
 		display:inline-block;
-		padding:10px 55px;
+		padding:0.6rem 3rem;
 	  	border-radius: 45px;
 	  	background: #ffffff;
 	  	box-shadow: 2px 2px 2px rgba(119,119,119,0.5);
@@ -321,8 +382,9 @@ footer{
 		font-weight: 400;
 		text-align: center;	
 	}
-	#pngegg{
+	img#pngegg{
 		width:100%;
+		max-width:500px;
 		height:auto;
 	}
 	.h3-rectangle{
@@ -347,6 +409,18 @@ footer{
 			width:auto;
 		}
 	}
+	@media screen and (max-width:576px) { 
+		p.h2{
+			font-size: 2rem;
+		}
+		p.h2-p{
+		  	font-size: 1rem;
+		}
+		img#crown{
+			display:block;
+			margin:1rem auto;
+		}
+	}
 }
 /*about*/
 #about{
@@ -357,21 +431,19 @@ footer{
  		font-size: 1rem;
  		font-weight: 400;
 	}
-	.col-sm-6:before{
-		content: "";
+	.rectangle-outer{
+		margin:auto;
+		max-width:500px;
 		border-radius: 26px;
 		border: solid 1px;
 		border-color: inherit;
-		position: absolute;
-		top: 24px;
-		left: 24px;
-		width: calc(100% - 48px);
-		height: calc(100% - 48px);
 	}
 	.rectangle{
 		height:18rem;
 		border-radius: 26px;
 		border: solid 10px #ffffff;
+		position:relative;
+
 		h3{
 			color: #ffffff;
 			font-family: "HiraKakuPro-W6";
@@ -387,18 +459,19 @@ footer{
 			font-weight: 400;
 		}
 		i{
+			font-size:5rem;
 			color:#fff;
 			opacity: 0.4;
 			position:absolute;
-			bottom:50px;
-			left:50px;
+			bottom:1rem;
+			left:1rem;
 		}
 	}
 	.rectangle:after{
 			content:"";
 			position:absolute;
-			top:-15px;
-			right:30px;
+			top:-50px;
+			right:-10px;
 			width: 15px;
 			height: 37px;
 			background-color: inherit;
@@ -407,13 +480,61 @@ footer{
 	.rectangle:before{
 			content:"";
 			position:absolute;
-			top:20px;
-			right:-5px;
+			top:-25px;
+			right:-40px;
 			width: 15px;
 			height: 37px;
 			background: inherit;
 			transform: rotate(63deg);
 	}
+	@media screen and (max-width:1200px) {
+		.rectangle{
+			h3{
+				font-size: 1.5rem;
+			}
+			p{
+				font-size: 1rem;
+			}
+			i{
+				font-size:4rem;
+			}
+		}	
+	}
+	@media screen and (max-width:992px) {
+		.rectangle{
+			h3{
+				font-size:1.75rem;
+			}
+			p{
+				font-size:1.25rem;
+			}
+			i{
+				font-size:5rem;
+			}
+		}
+	}
+	@media screen and (max-width:768px) {
+		.rectangle:after{
+			display:none;
+		}
+		.rectangle:before{
+			display:none;
+		}
+	}
+	@media screen and (max-width:576px) {
+		.rectangle{
+			h3{
+				font-size: 1.25rem;
+			}
+			p{
+				font-size: 1rem;
+			}
+			i{
+				font-size: 4rem;
+			}
+		}	
+	}
+
 }
 
 #mind{
@@ -439,11 +560,17 @@ footer{
 		font-weight:400;
 		text-align:center;
 	}
+	@media screen and (max-width:576px) {
+		p{
+			font-size:1rem;
+		}
+	}
 	.row{
 		counter-reset: number 0;
 		margin:10vh 0;
 
 		.rectangle{
+			max-width:320px;
 			margin:auto;
 			height:360px;
 			border-radius: 10px;
@@ -487,7 +614,7 @@ footer{
 		    justify-content: center;
 		    align-items: center;
 		}
-		.col-sm-3{
+		.col-lg-3{
 			i{
 				font-size:5rem;
 			}
@@ -498,7 +625,7 @@ footer{
 				font-size:0.75rem;
 			}
 			.rectangle{
-  				height: 260px;
+  				height: 300px;
 			}
 			.rectangle:before{
 				width:31px;
@@ -509,8 +636,7 @@ footer{
 			}
 		}
 		.div-end{
-			position:absolute;
-			top :50px;
+			margin-top:3rem;
 		}
 	}
 }
@@ -520,21 +646,6 @@ footer{
 
 	.row{
 		counter-reset: number 0;
-		position:relative;
-		border-bottom: solid 5px #6dd2a5;
-
-	}
-	.row:after{
-		display:block;
-		content: "";
-		position:absolute;
-		right:-5px;
-		bottom:-17px;
-		 width: 0;
-	     height: 0;
-	     border-left: 15px solid #6dd2a5;
-	     border-top: 15px solid transparent;
-	     border-bottom: 15px solid transparent;
 	}
 	.rectangle{
 		border-radius: 26px;
@@ -578,11 +689,30 @@ footer{
 		justify-content: center;
 		align-items: center;
 	}
-	p{
+	p.arrow{
   		font-family: "SourceHanSans-Normal";
   		font-size: 1.3rem;
   		font-weight: 400;
   		text-align: center;
+		position:relative;
+		border-top: solid 5px #6dd2a5;
+	}
+	p.arrow:before{
+		display:block;
+		content: "";
+		position:absolute;
+		right:-5px;
+		top:-17px;
+		width: 0;
+	    height: 0;
+	    border-left: 15px solid #6dd2a5;
+	    border-top: 15px solid transparent;
+	    border-bottom: 15px solid transparent;
+	}
+	@media screen and (max-width:576px){
+		p.arrow{
+			font-size:1rem;
+		}
 	}
 }
 
@@ -612,7 +742,7 @@ footer{
 			justify-content:center;
   			align-items: center;
 	 		position:absolute;
-	 		top: 0;
+	 		top: -11px;
 	 		left: 0;
 	 		content:"Q";
 	 		color:#fff;
@@ -627,7 +757,7 @@ footer{
 			justify-content:center;
   			align-items: center;
 	 		position:absolute;
-	 		top: 0;
+	 		top: -11px;
 	 		left: 0;
 	 		color:#000;
 	 		content:"A";
@@ -639,7 +769,8 @@ footer{
 	 	}
 	}
 	a.inquiry{
-		padding:1rem 4rem;
+		display:inline-block;
+		padding:1rem 6rem;
 		margin:auto;
 		position:relative;
 		border-radius: 10px;
@@ -651,7 +782,6 @@ footer{
   		letter-spacing: 1.4137931px;
 	}
 	a.inquiry:after{
-		display:inline-block;
 		content: "";
 		position:absolute;
 		top: calc(50% - 18px);
@@ -661,6 +791,41 @@ footer{
 	    border-left: 15px solid #fff;
 	    border-top: 15px solid transparent;
 	    border-bottom: 15px solid transparent;
+	}
+	@media screen and (max-width:768px) {
+		.rectangle{
+			p{
+				padding-left:40px;
+				font-size:1rem;
+			}
+			.question p:before{
+		 		top: -7px;
+		 		left: 0;
+		 		width: 34px;
+			  	height: 34px;
+		 	}
+		 	.answer p:before{
+		 		top: -7px;
+		 		left: 0;
+		 		width: 34px;
+	 		 	height: 34px;
+		 	}
+		}
+	 	a.inquiry{
+	 		font-size:1rem;
+	 		padding:0.5rem 3rem;
+	 	}
+	 	a.inquiry:after{
+			content: "";
+			position:absolute;
+			top: calc(50% - 12px);
+			right:1rem;
+			width: 0;
+		    height: 0;
+		    border-left: 10px solid #fff;
+		    border-top: 10px solid transparent;
+		    border-bottom: 10px solid transparent;
+		}
 	}
 }
 #cost{
@@ -680,6 +845,7 @@ footer{
 	}
 
 	.rectangle{
+		max-width:360px;
   		border-radius: 15px;
   		border: solid 3px #ffffff;
   		background: #ffffff;
@@ -701,6 +867,30 @@ footer{
   			font-size: 2rem;
   			border-bottom: solid 3px #51c191;
   		}
+  		@media screen and (max-width:992px){
+  			h3{
+  				font-size:1.25rem
+  			}
+  			p.price{
+  				font-size:1.25rem;
+  			}
+  		}
+  		@media screen and (max-width:768px){
+  			h3{
+  				font-size:1.75rem;
+  			}
+  			p.price{
+  				font-size:2rem;
+  			}
+  		}
+  		@media screen and (max-width:576px){
+  			h3{
+  				font-size:1.25rem;
+  			}
+  			p.price{
+  				font-size:1.25rem;
+  			}
+  		}
 	}
 }
 
@@ -715,8 +905,9 @@ footer{
 
 		tr{
 			td{
-				padding:1.25rem 2.5rem;
+				padding:1.25rem 2rem;
 				border: solid 1px #979797;
+				border-top:none;
 			  	color: #333333;
 			  	font-family: "HiraKakuPro-W6";
 			  	font-size: 1.25rem;
@@ -731,8 +922,38 @@ footer{
 				border-right:none;
 			}
 		}		
-		tr:first-child td{
-			border-top:none;
+		@media screen and (max-width:768px){
+			tr{
+				td{
+					display:block;
+					border: solid 1px #979797;
+					border-top:none;
+					padding:1rem 1rem;
+				}
+				td:first-child{
+					border-left: solid 1px #979797;
+				}
+				td:last-child{
+					border-right: solid 1px #979797;
+				}
+				td:nth-last-child(1){
+					text-align:left;
+					padding:1rem 3rem;
+				}
+				td:nth-last-child(2){
+					text-align:left;				}
+				td:nth-last-child(3){
+					background-color:#eeeeee;
+				}
+			}
+			tr:first-child{
+				display:none;
+			}
+			tr:nth-child(2){
+				td:first-child{
+					border-top: solid 1px #979797;
+				}
+			}
 		}
 	}
 }
@@ -768,6 +989,24 @@ footer{
 		display:inline-block;
 		font-size:2.5rem
 	}
+	@media screen and (max-width:992px) {
+		h3{
+			font-size:2rem;
+			padding-left:2rem
+		}
+		i{
+			font-size:2rem;
+		}
+	}
+	@media screen and (max-width:554px) {
+		h3{
+			font-size:1.5rem;
+			padding-left:1.5rem;
+		}
+		i{
+			font-size:1.5rem;
+		}
+	}
 }
 
 #documents{
@@ -781,9 +1020,14 @@ footer{
 	p{
   		color: #666666;
   		font-family: "HiraKakuPro-W6";
-  		font-size: 28px;
+  		font-size: 1.75rem;
   		font-weight: 400;
   		text-align: center;
+	}
+	@media screen and (max-width:768px) {
+		p{
+			font-size:1rem;
+		}
 	}
 }
 
@@ -800,6 +1044,8 @@ footer{
 	  	text-align:center;
 	}
 	.rectangle{
+		max-width:300px;
+		margin:auto;
 		height:20rem;
   		border-radius: 15px;
   		border: solid 3px #51c191;
@@ -822,6 +1068,11 @@ footer{
   			font-weight: 400;
   			line-height: 2rem;			
   		}
+  		@media screen and (max-width:768px) {
+  			i{
+  				font-size:4rem;
+  			}
+  		}
 	}
 }
 
@@ -833,6 +1084,8 @@ footer{
 		background: linear-gradient(180deg, #fff 0%, #fff 20%, #51c191 20%, #51c191 100%);
 	}
 	.rectangle{
+		max-width:400px;
+		margin:auto;
 	  	box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
 	  	border-radius: 10px;
 	  	background: #fff;
@@ -897,6 +1150,23 @@ footer{
   			font-size: 1.5rem;
   			font-weight: 400;
   		}
+  		@media screen and (max-width:992px) {
+  			h3{
+  				font-size:1.5rem;
+  			}
+  			p{
+  				font-size:1rem;
+  			}
+  			a{
+  				padding:1rem 3rem;
+  			}
+		}
+		@media screen and (max-width:576px) {
+			a{
+				font-size:1rem;
+				padding:0.5rem 2rem;
+			}
+		}
 	}
 }
 
@@ -969,10 +1239,6 @@ footer{
 		}
 		#NewArticles{
 			margin-top:10vh;
-
-			a{
-				padding-bottom:3rem;
-			}
 		}
 	}
 }
@@ -1021,7 +1287,6 @@ footer{
 		position:absolute;
 		right:1rem;
 	}
-
 	.a1{
   		background: #ffffff;
   		box-shadow: 2px 2px 2px rgba(119,119,119,0.5);
@@ -1033,11 +1298,20 @@ footer{
   		box-shadow: 2px 3px 4px -2px rgba(0,0,0,0.5);
   		color:#fff;
 	}
+	@media screen and (max-width:768px) {
+		a{
+			width:300px;
+			font-size:1rem;
+		}
+	}
 
 }
 #cost2{
 	margin-top:10vh;
-	margin-bottom:30vh;
+
+	.row{
+		margin-top:10vh;
+	}
 
 	h3{
   		color: #51c191;
@@ -1065,13 +1339,16 @@ footer{
 		width:100%;
 		height:auto;
 	}
-	.row{
-		margin-top:20vh;
-		position:relative;
-	}
-	.col-right{
-		position:absolute;
-		right:5rem;
+	@media screen and (max-width:768px){
+		h3{
+			font-size:1.5rem
+		}
+		h4{
+			font-size:1.25rem;
+		}
+		p{
+			font-size:1rem;
+		}
 	}
 }
 #function-list2{
