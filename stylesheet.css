@@ -293,78 +293,106 @@ img.img-circle {
   background-color: #6dd2a5;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   /* line 228, stylesheet.scss */
+  #header-introduction {
+    background-image: url("image/header-background.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 236, stylesheet.scss */
   #header-introduction {
     padding-bottom: 10vh;
   }
 }
 /* header*/
-/* line 233, stylesheet.scss */
+/* line 241, stylesheet.scss */
 header {
+  height: 67px;
   /*JSで変更後と思われる*/
 }
-/* line 235, stylesheet.scss */
+/* line 243, stylesheet.scss */
+header .navbar {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 247, stylesheet.scss */
 header .header-logo {
   height: 100%;
   width: auto;
 }
-/* line 239, stylesheet.scss */
+/* line 251, stylesheet.scss */
 header .navbar, header .row {
   width: 100%;
 }
-/* line 242, stylesheet.scss */
+/* line 254, stylesheet.scss */
 header .navbar {
   margin: 0 auto;
   background-color: #6dd2a5;
 }
-/* line 246, stylesheet.scss */
+/* line 258, stylesheet.scss */
 header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'\a 		xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)'\a 		stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-/* line 251, stylesheet.scss */
+/* line 263, stylesheet.scss */
 header ul {
-  height: 44px;
   list-style: none;
   text-align: center;
 }
-/* line 256, stylesheet.scss */
+/* line 267, stylesheet.scss */
 header ul .rectangle {
   display: block;
   width: 12rem;
   padding: 0.5rem;
   border-radius: 22px;
 }
-/* line 262, stylesheet.scss */
+/* line 273, stylesheet.scss */
 header ul .log-in {
   border: solid 1.6px #ffffff;
 }
-/* line 265, stylesheet.scss */
+/* line 276, stylesheet.scss */
 header ul .account-create-header {
   background: #ffb635;
 }
-/* line 268, stylesheet.scss */
+/* line 279, stylesheet.scss */
 header ul a {
   color: #fff;
   font-family: "HiraKakuPro-W6";
   font-size: 1rem;
 }
-/* line 273, stylesheet.scss */
+/* line 284, stylesheet.scss */
 header ul a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 277, stylesheet.scss */
+/* line 288, stylesheet.scss */
 header ul a.in-rectangle-font {
   font-size: 0.875rem;
 }
-/* line 281, stylesheet.scss */
+/* line 293, stylesheet.scss */
+header .collapsing ul {
+  background-color: #6dd2a5;
+  width: 100%;
+  height: 100%;
+}
+/* line 297, stylesheet.scss */
+header .collapsing ul li {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0px;
+  z-index: 500;
+  background: #6dd2a5;
+}
+/* line 307, stylesheet.scss */
 header .show ul {
   background-color: #6dd2a5;
   width: 100%;
   height: 100%;
 }
-/* line 285, stylesheet.scss */
+/* line 311, stylesheet.scss */
 header .show ul li {
   width: 100%;
   padding-top: 1rem;
@@ -373,85 +401,93 @@ header .show ul li {
   z-index: 500;
   background: #6dd2a5;
 }
-/* line 296, stylesheet.scss */
+/* line 322, stylesheet.scss */
 header .nav-color-change {
   background-color: #ffffff !important;
 }
-/* line 299, stylesheet.scss */
+/* line 325, stylesheet.scss */
 header .nav-color-change .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'\a 			xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81, 193, 145, 1)'\a 			stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-/* line 305, stylesheet.scss */
+/* line 331, stylesheet.scss */
 header .nav-color-change ul a {
   color: #51c191;
 }
-/* line 308, stylesheet.scss */
+/* line 334, stylesheet.scss */
 header .nav-color-change ul a:hover {
   color: #51c191;
 }
-/* line 311, stylesheet.scss */
+/* line 337, stylesheet.scss */
 header .nav-color-change ul .log-in {
   border-color: #51c191;
 }
-/* line 314, stylesheet.scss */
+/* line 340, stylesheet.scss */
 header .nav-color-change ul a.account-create-header {
   color: #fff;
 }
-/* line 318, stylesheet.scss */
+/* line 345, stylesheet.scss */
+header .nav-color-change .collapsing ul {
+  background-color: #fff;
+}
+/* line 347, stylesheet.scss */
+header .nav-color-change .collapsing ul li {
+  background: #fff;
+}
+/* line 352, stylesheet.scss */
 header .nav-color-change .show ul {
   background-color: #fff;
 }
-/* line 320, stylesheet.scss */
+/* line 354, stylesheet.scss */
 header .nav-color-change .show ul li {
   background: #fff;
 }
 
 /*footer*/
-/* line 328, stylesheet.scss */
+/* line 362, stylesheet.scss */
 footer h2, footer h3, footer p, footer a {
   color: #fff;
   font-family: "HiraginoSans-W6";
   font-weight: 400;
   font-size: 1rem;
 }
-/* line 335, stylesheet.scss */
+/* line 369, stylesheet.scss */
 footer h2 {
   font-size: 2.5rem;
 }
-/* line 338, stylesheet.scss */
+/* line 372, stylesheet.scss */
 footer a {
   display: block;
 }
-/* line 341, stylesheet.scss */
+/* line 375, stylesheet.scss */
 footer a:before {
   content: "- ";
 }
 
 /*LPページ*/
 /*introduction*/
-/* line 349, stylesheet.scss */
+/* line 383, stylesheet.scss */
 #introduction {
   padding-top: 20vh;
 }
-/* line 352, stylesheet.scss */
+/* line 386, stylesheet.scss */
 #introduction p.h2 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
   font-size: 3rem;
   font-weight: 400;
 }
-/* line 358, stylesheet.scss */
+/* line 392, stylesheet.scss */
 #introduction p.h2-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 364, stylesheet.scss */
+/* line 398, stylesheet.scss */
 #introduction img#crown {
   text-align: center;
 }
-/* line 367, stylesheet.scss */
+/* line 401, stylesheet.scss */
 #introduction p#img-crown-p {
   display: inline-block;
   padding: 0.6rem 3rem;
@@ -463,7 +499,7 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 378, stylesheet.scss */
+/* line 412, stylesheet.scss */
 #introduction p.h3-rectangle-p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
@@ -471,13 +507,13 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 385, stylesheet.scss */
+/* line 419, stylesheet.scss */
 #introduction img#pngegg {
   width: 100%;
   max-width: 500px;
   height: auto;
 }
-/* line 390, stylesheet.scss */
+/* line 424, stylesheet.scss */
 #introduction .h3-rectangle {
   /*ずらした分のマージンだいぶ適当です*/
   transform: translateY(50%);
@@ -487,7 +523,7 @@ footer a:before {
   display: flex;
   justify-content: space-evenly;
 }
-/* line 399, stylesheet.scss */
+/* line 433, stylesheet.scss */
 #introduction .h3-rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -495,22 +531,32 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 406, stylesheet.scss */
+/* line 440, stylesheet.scss */
 #introduction .h3-rectangle i {
   color: #6dd2a5;
   height: 80px;
   width: auto;
 }
+@media screen and (max-width: 768px) {
+  /* line 447, stylesheet.scss */
+  #introduction p.h3-rectangle-p {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 576px) {
-  /* line 413, stylesheet.scss */
+  /* line 452, stylesheet.scss */
   #introduction p.h2 {
     font-size: 2rem;
   }
-  /* line 416, stylesheet.scss */
+  /* line 455, stylesheet.scss */
   #introduction p.h2-p {
     font-size: 1rem;
   }
-  /* line 419, stylesheet.scss */
+  /* line 458, stylesheet.scss */
+  #introduction p.h3-rectangle-p {
+    font-size: 1rem;
+  }
+  /* line 461, stylesheet.scss */
   #introduction img#crown {
     display: block;
     margin: 1rem auto;
@@ -518,17 +564,17 @@ footer a:before {
 }
 
 /*about*/
-/* line 426, stylesheet.scss */
+/* line 468, stylesheet.scss */
 #about {
   margin-top: 20vh;
 }
-/* line 429, stylesheet.scss */
+/* line 471, stylesheet.scss */
 #about .h2-p {
   font-family: "HiraKakuPro-W3";
   font-size: 1rem;
   font-weight: 400;
 }
-/* line 434, stylesheet.scss */
+/* line 476, stylesheet.scss */
 #about .rectangle-outer {
   margin: auto;
   max-width: 500px;
@@ -536,14 +582,14 @@ footer a:before {
   border: solid 1px;
   border-color: inherit;
 }
-/* line 441, stylesheet.scss */
+/* line 483, stylesheet.scss */
 #about .rectangle {
   height: 18rem;
   border-radius: 26px;
   border: solid 10px #ffffff;
   position: relative;
 }
-/* line 447, stylesheet.scss */
+/* line 489, stylesheet.scss */
 #about .rectangle h3 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
@@ -552,14 +598,14 @@ footer a:before {
   border-bottom: solid 3px #ffffff;
   text-align: center;
 }
-/* line 455, stylesheet.scss */
+/* line 497, stylesheet.scss */
 #about .rectangle p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
   font-size: 1.25rem;
   font-weight: 400;
 }
-/* line 461, stylesheet.scss */
+/* line 503, stylesheet.scss */
 #about .rectangle i {
   font-size: 5rem;
   color: #fff;
@@ -568,7 +614,7 @@ footer a:before {
   bottom: 1rem;
   left: 1rem;
 }
-/* line 470, stylesheet.scss */
+/* line 512, stylesheet.scss */
 #about .rectangle:after {
   content: "";
   position: absolute;
@@ -579,7 +625,7 @@ footer a:before {
   background-color: inherit;
   transform: rotate(38deg);
 }
-/* line 480, stylesheet.scss */
+/* line 522, stylesheet.scss */
 #about .rectangle:before {
   content: "";
   position: absolute;
@@ -590,79 +636,148 @@ footer a:before {
   background: inherit;
   transform: rotate(63deg);
 }
+@media screen and (min-width: 1200px) {
+  /* line 534, stylesheet.scss */
+  #about .row {
+    position: relative;
+    height: 1100px;
+  }
+  /* line 538, stylesheet.scss */
+  #about .col-lg-6 {
+    position: absolute;
+  }
+  /* line 541, stylesheet.scss */
+  #about lottie-player {
+    position: absolute;
+  }
+  /* line 544, stylesheet.scss */
+  #about .border-green {
+    top: 0;
+    left: -50px;
+  }
+  /* line 548, stylesheet.scss */
+  #about .border-yellow {
+    top: 100px;
+    right: 170px;
+  }
+  /* line 552, stylesheet.scss */
+  #about .border-red {
+    top: 330px;
+    right: -50px;
+  }
+  /* line 556, stylesheet.scss */
+  #about .border-blue {
+    top: 500px;
+    left: -50px;
+  }
+  /* line 560, stylesheet.scss */
+  #about .border-lightblue {
+    top: 730px;
+    left: 170px;
+  }
+  /* line 564, stylesheet.scss */
+  #about .border-orange {
+    top: 850px;
+    right: -50px;
+  }
+  /* line 568, stylesheet.scss */
+  #about .menperson {
+    right: 0;
+    top: 150px;
+  }
+  /* line 572, stylesheet.scss */
+  #about .linegraph {
+    top: 300px;
+    left: 0;
+  }
+  /* line 576, stylesheet.scss */
+  #about .gear {
+    top: 650px;
+    right: 0;
+  }
+  /* line 580, stylesheet.scss */
+  #about .womenperson {
+    left: -50px;
+    top: 800px;
+  }
+}
 @media screen and (max-width: 1200px) {
-  /* line 492, stylesheet.scss */
+  /* line 586, stylesheet.scss */
+  #about lottie-player {
+    display: none;
+  }
+  /* line 590, stylesheet.scss */
   #about .rectangle h3 {
     font-size: 1.5rem;
   }
-  /* line 495, stylesheet.scss */
+  /* line 593, stylesheet.scss */
   #about .rectangle p {
     font-size: 1rem;
   }
-  /* line 498, stylesheet.scss */
+  /* line 596, stylesheet.scss */
   #about .rectangle i {
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 505, stylesheet.scss */
+  /* line 604, stylesheet.scss */
   #about .rectangle h3 {
     font-size: 1.75rem;
   }
-  /* line 508, stylesheet.scss */
+  /* line 607, stylesheet.scss */
   #about .rectangle p {
     font-size: 1.25rem;
   }
-  /* line 511, stylesheet.scss */
+  /* line 610, stylesheet.scss */
   #about .rectangle i {
     font-size: 5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 517, stylesheet.scss */
+  /* line 616, stylesheet.scss */
   #about .rectangle:after {
     display: none;
   }
-  /* line 520, stylesheet.scss */
+  /* line 619, stylesheet.scss */
   #about .rectangle:before {
     display: none;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 526, stylesheet.scss */
+  /* line 625, stylesheet.scss */
   #about .rectangle h3 {
     font-size: 1.25rem;
   }
-  /* line 529, stylesheet.scss */
+  /* line 628, stylesheet.scss */
   #about .rectangle p {
     font-size: 1rem;
   }
-  /* line 532, stylesheet.scss */
+  /* line 631, stylesheet.scss */
   #about .rectangle i {
     font-size: 4rem;
   }
 }
 
-/* line 540, stylesheet.scss */
+/* line 639, stylesheet.scss */
 #mind {
   margin-top: 20vh;
 }
-/* line 543, stylesheet.scss */
+/* line 642, stylesheet.scss */
 #mind .background-green {
   margin-top: 5vh;
   padding: 15vh 0;
 }
 
-/* line 549, stylesheet.scss */
+/* line 648, stylesheet.scss */
 #voice {
   margin-top: 20vh;
 }
 
-/* line 553, stylesheet.scss */
+/* line 652, stylesheet.scss */
 #development {
   margin-top: 20vh;
 }
-/* line 556, stylesheet.scss */
+/* line 655, stylesheet.scss */
 #development p {
   color: #555555;
   font-family: "HiraKakuPro-W6";
@@ -671,17 +786,17 @@ footer a:before {
   text-align: center;
 }
 @media screen and (max-width: 576px) {
-  /* line 564, stylesheet.scss */
+  /* line 663, stylesheet.scss */
   #development p {
     font-size: 1rem;
   }
 }
-/* line 568, stylesheet.scss */
+/* line 667, stylesheet.scss */
 #development .row {
   counter-reset: number 0;
   margin: 10vh 0;
 }
-/* line 572, stylesheet.scss */
+/* line 671, stylesheet.scss */
 #development .row .rectangle {
   max-width: 320px;
   margin: auto;
@@ -690,12 +805,12 @@ footer a:before {
   border: solid 4px #51c191;
   text-align: center;
 }
-/* line 580, stylesheet.scss */
+/* line 679, stylesheet.scss */
 #development .row .rectangle i {
   font-size: 6rem;
   color: #51c191;
 }
-/* line 584, stylesheet.scss */
+/* line 683, stylesheet.scss */
 #development .row .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -703,7 +818,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 591, stylesheet.scss */
+/* line 690, stylesheet.scss */
 #development .row .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -712,7 +827,7 @@ footer a:before {
   text-align: center;
   line-height: 1.5rem;
 }
-/* line 600, stylesheet.scss */
+/* line 699, stylesheet.scss */
 #development .row .rectangle:before {
   counter-increment: number 1;
   content: counter(number) " ";
@@ -730,23 +845,23 @@ footer a:before {
   justify-content: center;
   align-items: center;
 }
-/* line 618, stylesheet.scss */
+/* line 717, stylesheet.scss */
 #development .row .col-lg-3 i {
   font-size: 5rem;
 }
-/* line 621, stylesheet.scss */
+/* line 720, stylesheet.scss */
 #development .row .col-lg-3 h4 {
   font-size: 0.875rem;
 }
-/* line 624, stylesheet.scss */
+/* line 723, stylesheet.scss */
 #development .row .col-lg-3 p {
   font-size: 0.75rem;
 }
-/* line 627, stylesheet.scss */
+/* line 726, stylesheet.scss */
 #development .row .col-lg-3 .rectangle {
   height: 300px;
 }
-/* line 630, stylesheet.scss */
+/* line 729, stylesheet.scss */
 #development .row .col-lg-3 .rectangle:before {
   width: 31px;
   height: 31px;
@@ -754,33 +869,33 @@ footer a:before {
   top: -15.5px;
   left: calc(50% - 15.5px);
 }
-/* line 638, stylesheet.scss */
+/* line 737, stylesheet.scss */
 #development .row .div-end {
   margin-top: 3rem;
 }
 
-/* line 644, stylesheet.scss */
+/* line 743, stylesheet.scss */
 #goal {
   margin-top: 20vh;
 }
-/* line 647, stylesheet.scss */
+/* line 746, stylesheet.scss */
 #goal .row {
   counter-reset: number 0;
 }
-/* line 650, stylesheet.scss */
+/* line 749, stylesheet.scss */
 #goal .rectangle {
   border-radius: 26px;
   border: double 8px #fff;
   text-align: center;
   height: 400px;
 }
-/* line 655, stylesheet.scss */
+/* line 754, stylesheet.scss */
 #goal .rectangle i {
   color: #fff;
   opacity: 0.4;
   font-size: 5rem;
 }
-/* line 660, stylesheet.scss */
+/* line 759, stylesheet.scss */
 #goal .rectangle h3 {
   color: #ffffff;
   font-family: "HiraKakuPro-W6";
@@ -788,7 +903,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 1.375px;
 }
-/* line 667, stylesheet.scss */
+/* line 766, stylesheet.scss */
 #goal .rectangle p {
   color: #ffffff;
   font-family: "SourceHanSans-Normal";
@@ -796,7 +911,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 675, stylesheet.scss */
+/* line 774, stylesheet.scss */
 #goal .rectangle:before {
   counter-increment: number 1;
   content: counter(number) " ";
@@ -814,7 +929,7 @@ footer a:before {
   justify-content: center;
   align-items: center;
 }
-/* line 692, stylesheet.scss */
+/* line 791, stylesheet.scss */
 #goal p.arrow {
   font-family: "SourceHanSans-Normal";
   font-size: 1.3rem;
@@ -823,7 +938,7 @@ footer a:before {
   position: relative;
   border-top: solid 5px #6dd2a5;
 }
-/* line 700, stylesheet.scss */
+/* line 799, stylesheet.scss */
 #goal p.arrow:before {
   display: block;
   content: "";
@@ -837,13 +952,13 @@ footer a:before {
   border-bottom: 15px solid transparent;
 }
 @media screen and (max-width: 576px) {
-  /* line 713, stylesheet.scss */
+  /* line 812, stylesheet.scss */
   #goal p.arrow {
     font-size: 1rem;
   }
 }
 
-/* line 719, stylesheet.scss */
+/* line 818, stylesheet.scss */
 #faq {
   margin-top: 10vh;
   padding-top: 10vh;
@@ -851,12 +966,12 @@ footer a:before {
   background-color: #f5f5f5;
   border-radius: 45px;
 }
-/* line 726, stylesheet.scss */
+/* line 825, stylesheet.scss */
 #faq .rectangle {
   border-radius: 26px;
   background: #ffffff;
 }
-/* line 730, stylesheet.scss */
+/* line 829, stylesheet.scss */
 #faq .rectangle p {
   position: relative;
   padding-left: 75px;
@@ -864,11 +979,11 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 737, stylesheet.scss */
+/* line 836, stylesheet.scss */
 #faq .rectangle .answer {
   border-top: solid 4px #ebf1f5;
 }
-/* line 740, stylesheet.scss */
+/* line 839, stylesheet.scss */
 #faq .rectangle .question p:before {
   display: flex;
   justify-content: center;
@@ -884,7 +999,7 @@ footer a:before {
   border-radius: 5px;
   background: #6dd2a5;
 }
-/* line 755, stylesheet.scss */
+/* line 854, stylesheet.scss */
 #faq .rectangle .answer p:before {
   display: flex;
   justify-content: center;
@@ -900,10 +1015,10 @@ footer a:before {
   border: solid 3px;
   text-align: center;
 }
-/* line 771, stylesheet.scss */
+/* line 870, stylesheet.scss */
 #faq a.inquiry {
   display: inline-block;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   margin: auto;
   position: relative;
   border-radius: 10px;
@@ -914,67 +1029,47 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 1.4137931px;
 }
-/* line 784, stylesheet.scss */
-#faq a.inquiry:after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 18px);
-  right: 1rem;
-  width: 0;
-  height: 0;
-  border-left: 15px solid #fff;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+/* line 883, stylesheet.scss */
+#faq a.inquiry i {
+  padding-left: 2rem;
 }
 @media screen and (max-width: 768px) {
-  /* line 797, stylesheet.scss */
+  /* line 889, stylesheet.scss */
   #faq .rectangle p {
     padding-left: 40px;
     font-size: 1rem;
   }
-  /* line 801, stylesheet.scss */
+  /* line 893, stylesheet.scss */
   #faq .rectangle .question p:before {
     top: -7px;
     left: 0;
     width: 34px;
     height: 34px;
   }
-  /* line 807, stylesheet.scss */
+  /* line 899, stylesheet.scss */
   #faq .rectangle .answer p:before {
     top: -7px;
     left: 0;
     width: 34px;
     height: 34px;
   }
-  /* line 814, stylesheet.scss */
+  /* line 906, stylesheet.scss */
   #faq a.inquiry {
     font-size: 1rem;
-    padding: 0.5rem 3rem;
-  }
-  /* line 818, stylesheet.scss */
-  #faq a.inquiry:after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 12px);
-    right: 1rem;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #fff;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    padding: 0.5rem 1rem;
   }
 }
 
-/* line 831, stylesheet.scss */
+/* line 912, stylesheet.scss */
 #cost {
   margin-top: 20vh;
 }
-/* line 834, stylesheet.scss */
+/* line 915, stylesheet.scss */
 #cost .background-green {
   margin-top: 10vh;
   padding: 10vh 0;
 }
-/* line 838, stylesheet.scss */
+/* line 919, stylesheet.scss */
 #cost p {
   color: #ffffff;
   font-family: "HiraKakuPro-W3";
@@ -983,7 +1078,7 @@ footer a:before {
   line-height: 2rem;
   text-align: center;
 }
-/* line 847, stylesheet.scss */
+/* line 928, stylesheet.scss */
 #cost .rectangle {
   max-width: 360px;
   border-radius: 15px;
@@ -993,66 +1088,66 @@ footer a:before {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 856, stylesheet.scss */
+/* line 937, stylesheet.scss */
 #cost .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
   font-size: 1.75rem;
   font-weight: 400;
 }
-/* line 862, stylesheet.scss */
+/* line 943, stylesheet.scss */
 #cost .rectangle p {
   color: #51c191;
   font-size: 1rem;
 }
-/* line 866, stylesheet.scss */
+/* line 947, stylesheet.scss */
 #cost .rectangle p.price {
   font-size: 2rem;
   border-bottom: solid 3px #51c191;
 }
 @media screen and (max-width: 992px) {
-  /* line 871, stylesheet.scss */
+  /* line 952, stylesheet.scss */
   #cost .rectangle h3 {
     font-size: 1.25rem;
   }
-  /* line 874, stylesheet.scss */
+  /* line 955, stylesheet.scss */
   #cost .rectangle p.price {
     font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 879, stylesheet.scss */
+  /* line 960, stylesheet.scss */
   #cost .rectangle h3 {
     font-size: 1.75rem;
   }
-  /* line 882, stylesheet.scss */
+  /* line 963, stylesheet.scss */
   #cost .rectangle p.price {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 887, stylesheet.scss */
+  /* line 968, stylesheet.scss */
   #cost .rectangle h3 {
     font-size: 1.25rem;
   }
-  /* line 890, stylesheet.scss */
+  /* line 971, stylesheet.scss */
   #cost .rectangle p.price {
     font-size: 1.25rem;
   }
 }
 
-/* line 897, stylesheet.scss */
+/* line 978, stylesheet.scss */
 #function-list {
   margin-top: 20vh;
 }
-/* line 900, stylesheet.scss */
+/* line 981, stylesheet.scss */
 #function-list table {
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
 }
-/* line 907, stylesheet.scss */
+/* line 988, stylesheet.scss */
 #function-list table tr td {
   padding: 1.25rem 2rem;
   border: solid 1px #979797;
@@ -1063,64 +1158,64 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 917, stylesheet.scss */
+/* line 998, stylesheet.scss */
 #function-list table tr td:first-child {
   border-left: none;
   vertical-align: top;
 }
-/* line 921, stylesheet.scss */
+/* line 1002, stylesheet.scss */
 #function-list table tr td:last-child {
   border-right: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 927, stylesheet.scss */
+  /* line 1008, stylesheet.scss */
   #function-list table tr td {
     display: block;
     border: solid 1px #979797;
     border-top: none;
     padding: 1rem 1rem;
   }
-  /* line 933, stylesheet.scss */
+  /* line 1014, stylesheet.scss */
   #function-list table tr td:first-child {
     border-left: solid 1px #979797;
   }
-  /* line 936, stylesheet.scss */
+  /* line 1017, stylesheet.scss */
   #function-list table tr td:last-child {
     border-right: solid 1px #979797;
   }
-  /* line 939, stylesheet.scss */
+  /* line 1020, stylesheet.scss */
   #function-list table tr td:nth-last-child(1) {
     text-align: left;
     padding: 1rem 3rem;
   }
-  /* line 943, stylesheet.scss */
+  /* line 1024, stylesheet.scss */
   #function-list table tr td:nth-last-child(2) {
     text-align: left;
   }
-  /* line 945, stylesheet.scss */
+  /* line 1026, stylesheet.scss */
   #function-list table tr td:nth-last-child(3) {
     background-color: #eeeeee;
   }
-  /* line 949, stylesheet.scss */
+  /* line 1030, stylesheet.scss */
   #function-list table tr:first-child {
     display: none;
   }
-  /* line 953, stylesheet.scss */
+  /* line 1034, stylesheet.scss */
   #function-list table tr:nth-child(2) td:first-child {
     border-top: solid 1px #979797;
   }
 }
 
-/* line 961, stylesheet.scss */
+/* line 1042, stylesheet.scss */
 .dushboard {
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
-/* line 965, stylesheet.scss */
+/* line 1046, stylesheet.scss */
 .dushboard .underscore {
   border-bottom: solid 3px #51c191;
 }
-/* line 969, stylesheet.scss */
+/* line 1050, stylesheet.scss */
 .dushboard h3 {
   display: inline-block;
   padding-left: 5rem;
@@ -1129,7 +1224,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 977, stylesheet.scss */
+/* line 1058, stylesheet.scss */
 .dushboard p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1137,49 +1232,49 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 984, stylesheet.scss */
+/* line 1065, stylesheet.scss */
 .dushboard img {
   width: 100%;
   height: auto;
 }
-/* line 988, stylesheet.scss */
+/* line 1069, stylesheet.scss */
 .dushboard i {
   display: inline-block;
   font-size: 2.5rem;
 }
 @media screen and (max-width: 992px) {
-  /* line 993, stylesheet.scss */
+  /* line 1074, stylesheet.scss */
   .dushboard h3 {
     font-size: 2rem;
     padding-left: 2rem;
   }
-  /* line 997, stylesheet.scss */
+  /* line 1078, stylesheet.scss */
   .dushboard i {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 554px) {
-  /* line 1002, stylesheet.scss */
+  /* line 1083, stylesheet.scss */
   .dushboard h3 {
     font-size: 1.5rem;
     padding-left: 1.5rem;
   }
-  /* line 1006, stylesheet.scss */
+  /* line 1087, stylesheet.scss */
   .dushboard i {
     font-size: 1.5rem;
   }
 }
 
-/* line 1012, stylesheet.scss */
+/* line 1093, stylesheet.scss */
 #documents {
   margin-top: 10vh;
 }
-/* line 1016, stylesheet.scss */
+/* line 1097, stylesheet.scss */
 #documents img {
   width: 100%;
   height: auto;
 }
-/* line 1020, stylesheet.scss */
+/* line 1101, stylesheet.scss */
 #documents p {
   color: #666666;
   font-family: "HiraKakuPro-W6";
@@ -1188,17 +1283,17 @@ footer a:before {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 1028, stylesheet.scss */
+  /* line 1109, stylesheet.scss */
   #documents p {
     font-size: 1rem;
   }
 }
 
-/* line 1035, stylesheet.scss */
+/* line 1116, stylesheet.scss */
 #function-ditails {
   margin-top: 10vh;
 }
-/* line 1039, stylesheet.scss */
+/* line 1120, stylesheet.scss */
 #function-ditails h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -1206,7 +1301,7 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 1046, stylesheet.scss */
+/* line 1127, stylesheet.scss */
 #function-ditails .rectangle {
   max-width: 300px;
   margin: auto;
@@ -1215,12 +1310,12 @@ footer a:before {
   border: solid 3px #51c191;
   text-align: center;
 }
-/* line 1053, stylesheet.scss */
+/* line 1134, stylesheet.scss */
 #function-ditails .rectangle i {
   font-size: 5rem;
   color: #51c191;
 }
-/* line 1057, stylesheet.scss */
+/* line 1138, stylesheet.scss */
 #function-ditails .rectangle h4 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -1228,7 +1323,7 @@ footer a:before {
   font-weight: 400;
   border-bottom: solid 3px #51c191;
 }
-/* line 1064, stylesheet.scss */
+/* line 1145, stylesheet.scss */
 #function-ditails .rectangle p {
   color: #51c191;
   font-family: "HiraKakuPro-W3";
@@ -1237,21 +1332,21 @@ footer a:before {
   line-height: 2rem;
 }
 @media screen and (max-width: 768px) {
-  /* line 1072, stylesheet.scss */
+  /* line 1153, stylesheet.scss */
   #function-ditails .rectangle i {
     font-size: 4rem;
   }
 }
 
-/* line 1079, stylesheet.scss */
+/* line 1160, stylesheet.scss */
 #example {
   margin-top: 10vh;
 }
-/* line 1083, stylesheet.scss */
+/* line 1164, stylesheet.scss */
 #example .gradient-green {
   background: linear-gradient(180deg, #fff 0%, #fff 20%, #51c191 20%, #51c191 100%);
 }
-/* line 1086, stylesheet.scss */
+/* line 1167, stylesheet.scss */
 #example .rectangle {
   max-width: 400px;
   margin: auto;
@@ -1259,12 +1354,12 @@ footer a:before {
   border-radius: 10px;
   background: #fff;
 }
-/* line 1093, stylesheet.scss */
+/* line 1174, stylesheet.scss */
 #example .rectangle img {
   width: 100%;
   height: auto;
 }
-/* line 1098, stylesheet.scss */
+/* line 1179, stylesheet.scss */
 #example .rectangle h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -1274,7 +1369,7 @@ footer a:before {
   text-align: center;
   border-bottom: solid 3px #51c191;
 }
-/* line 1107, stylesheet.scss */
+/* line 1188, stylesheet.scss */
 #example .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1283,12 +1378,12 @@ footer a:before {
   line-height: 1.75rem;
 }
 
-/* line 1117, stylesheet.scss */
+/* line 1198, stylesheet.scss */
 .contact {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-/* line 1121, stylesheet.scss */
+/* line 1202, stylesheet.scss */
 .contact .rectangle {
   text-align: center;
   border-radius: 15px;
@@ -1298,14 +1393,14 @@ footer a:before {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 1129, stylesheet.scss */
+/* line 1210, stylesheet.scss */
 .contact .rectangle h3 {
   color: #050505;
   font-family: "HiraKakuPro-W6";
   font-size: 2.5rem;
   font-weight: 400;
 }
-/* line 1135, stylesheet.scss */
+/* line 1216, stylesheet.scss */
 .contact .rectangle p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1313,7 +1408,7 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 1142, stylesheet.scss */
+/* line 1223, stylesheet.scss */
 .contact .rectangle a {
   display: inline-block;
   padding: 1rem 10rem;
@@ -1326,21 +1421,21 @@ footer a:before {
   font-weight: 400;
 }
 @media screen and (max-width: 992px) {
-  /* line 1154, stylesheet.scss */
+  /* line 1235, stylesheet.scss */
   .contact .rectangle h3 {
     font-size: 1.5rem;
   }
-  /* line 1157, stylesheet.scss */
+  /* line 1238, stylesheet.scss */
   .contact .rectangle p {
     font-size: 1rem;
   }
-  /* line 1160, stylesheet.scss */
+  /* line 1241, stylesheet.scss */
   .contact .rectangle a {
     padding: 1rem 3rem;
   }
 }
 @media screen and (max-width: 576px) {
-  /* line 1165, stylesheet.scss */
+  /* line 1246, stylesheet.scss */
   .contact .rectangle a {
     font-size: 1rem;
     padding: 0.5rem 2rem;
@@ -1349,21 +1444,22 @@ footer a:before {
 
 /* LPページ終わり*/
 /* ~~~~~~~~~~~~~~~~~~~~*/
-/* お知らせ */
-/* line 1180, stylesheet.scss */
+/* お知らせ notice */
+/* line 1261, stylesheet.scss */
 #top-heading h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.4px;
+  margin: 0;
 }
 
-/* line 1188, stylesheet.scss */
+/* line 1270, stylesheet.scss */
 #notice {
   margin-bottom: 20vh;
 }
-/* line 1192, stylesheet.scss */
+/* line 1274, stylesheet.scss */
 #notice #maincontent h3 {
   color: #050505;
   font-family: "HiraginoSans-W6";
@@ -1371,7 +1467,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.4px;
 }
-/* line 1199, stylesheet.scss */
+/* line 1281, stylesheet.scss */
 #notice #maincontent p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1379,12 +1475,12 @@ footer a:before {
   font-weight: 400;
   line-height: 1.75rem;
 }
-/* line 1206, stylesheet.scss */
+/* line 1288, stylesheet.scss */
 #notice #maincontent img {
   width: 100%;
   height: auto;
 }
-/* line 1212, stylesheet.scss */
+/* line 1294, stylesheet.scss */
 #notice #sidebar h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1393,26 +1489,32 @@ footer a:before {
   font-size: 1.25rem;
   font-weight: 400;
 }
-/* line 1220, stylesheet.scss */
+/* line 1302, stylesheet.scss */
 #notice #sidebar a {
-  position: relative;
+  display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  display: block;
+  border-bottom: solid 1px #e6e6e6;
+  font-size: 0.875rem;
   color: #666666;
   font-family: "HiraginoSans-W3";
-  font-size: 0.875rem;
-  font-weight: 400;
   letter-spacing: 0.6px;
-  border-bottom: solid 1px #e6e6e6;
 }
-/* line 1234, stylesheet.scss */
-#notice #sidebar #category a:after {
-  content: "＞";
-  position: absolute;
-  right: 1rem;
+/* line 1312, stylesheet.scss */
+#notice #sidebar a i {
+  display: inline-block;
+  float: right;
+  padding-right: 1rem;
+  color: #888888;
+  font-size: 1.2rem;
 }
-/* line 1240, stylesheet.scss */
+/* line 1320, stylesheet.scss */
+#notice #sidebar a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 1325, stylesheet.scss */
 #notice #sidebar #NewArticles {
   margin-top: 10vh;
 }
@@ -1420,7 +1522,7 @@ footer a:before {
 /* お知らせ終わり */
 /*~~~~~~~~~~~~~~~~~*/
 /* ページ名がわからなかったので適当にid,class名つけてます */
-/* line 1251, stylesheet.scss */
+/* line 1336, stylesheet.scss */
 #introduction2 {
   width: 100%;
   height: 100%;
@@ -1428,9 +1530,10 @@ footer a:before {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  background-position: 50% 50%;
   /*ここのクラス名適当です*/
 }
-/* line 1259, stylesheet.scss */
+/* line 1345, stylesheet.scss */
 #introduction2 h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
@@ -1438,7 +1541,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.7px;
 }
-/* line 1266, stylesheet.scss */
+/* line 1352, stylesheet.scss */
 #introduction2 p {
   color: #ffffff;
   font-family: "HiraginoSans-W3";
@@ -1446,7 +1549,7 @@ footer a:before {
   font-weight: 400;
   letter-spacing: 0.26px;
 }
-/* line 1275, stylesheet.scss */
+/* line 1361, stylesheet.scss */
 #introduction2 a {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1457,19 +1560,20 @@ footer a:before {
   font-size: 1.5rem;
   position: relative;
 }
-/* line 1285, stylesheet.scss */
-#introduction2 a:after {
-  content: "＞";
-  position: absolute;
-  right: 1rem;
+/* line 1371, stylesheet.scss */
+#introduction2 i {
+  display: inline-block;
+  float: right;
+  padding-right: 1rem;
+  font-size: 36px;
 }
-/* line 1290, stylesheet.scss */
+/* line 1377, stylesheet.scss */
 #introduction2 .a1 {
   background: #ffffff;
   box-shadow: 2px 2px 2px rgba(119, 119, 119, 0.5);
   color: #51c191;
 }
-/* line 1295, stylesheet.scss */
+/* line 1382, stylesheet.scss */
 #introduction2 .a2 {
   background: #ffb635;
   box-shadow: -2px -3px 4px rgba(255, 255, 255, 0.5);
@@ -1477,22 +1581,30 @@ footer a:before {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  /* line 1302, stylesheet.scss */
-  #introduction2 a {
-    width: 300px;
+  /* line 1389, stylesheet.scss */
+  #introduction2 p {
     font-size: 1rem;
+  }
+  /* line 1392, stylesheet.scss */
+  #introduction2 a {
+    width: 280px;
+    font-size: 1rem;
+  }
+  /* line 1396, stylesheet.scss */
+  #introduction2 i {
+    font-size: 24px;
   }
 }
 
-/* line 1309, stylesheet.scss */
+/* line 1402, stylesheet.scss */
 #cost2 {
   margin-top: 10vh;
 }
-/* line 1312, stylesheet.scss */
+/* line 1405, stylesheet.scss */
 #cost2 .row {
   margin-top: 10vh;
 }
-/* line 1316, stylesheet.scss */
+/* line 1409, stylesheet.scss */
 #cost2 h3 {
   color: #51c191;
   font-family: "HiraKakuPro-W6";
@@ -1500,14 +1612,14 @@ footer a:before {
   font-weight: 400;
   text-align: center;
 }
-/* line 1323, stylesheet.scss */
+/* line 1416, stylesheet.scss */
 #cost2 h4 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 1329, stylesheet.scss */
+/* line 1422, stylesheet.scss */
 #cost2 p {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1517,36 +1629,36 @@ footer a:before {
   font-weight: 400;
   line-height: 2rem;
 }
-/* line 1338, stylesheet.scss */
+/* line 1431, stylesheet.scss */
 #cost2 img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 1343, stylesheet.scss */
+  /* line 1436, stylesheet.scss */
   #cost2 h3 {
     font-size: 1.5rem;
   }
-  /* line 1346, stylesheet.scss */
+  /* line 1439, stylesheet.scss */
   #cost2 h4 {
     font-size: 1.25rem;
   }
-  /* line 1349, stylesheet.scss */
+  /* line 1442, stylesheet.scss */
   #cost2 p {
     font-size: 1rem;
   }
 }
 
-/* line 1354, stylesheet.scss */
+/* line 1447, stylesheet.scss */
 #function-list2 {
   margin-top: 10vh;
   text-align: center;
 }
-/* line 1358, stylesheet.scss */
+/* line 1451, stylesheet.scss */
 #function-list2 .row {
   margin: 10vh 0;
 }
-/* line 1362, stylesheet.scss */
+/* line 1455, stylesheet.scss */
 #function-list2 .circle {
   margin-left: auto;
   margin-right: auto;
@@ -1556,12 +1668,12 @@ footer a:before {
   border-radius: 50%;
   text-align: center;
 }
-/* line 1370, stylesheet.scss */
+/* line 1463, stylesheet.scss */
 #function-list2 .circle i {
   color: #fff;
   font-size: 4rem;
 }
-/* line 1375, stylesheet.scss */
+/* line 1468, stylesheet.scss */
 #function-list2 .circle2 {
   margin-left: auto;
   margin-right: auto;
@@ -1572,12 +1684,12 @@ footer a:before {
   border-radius: 50%;
   text-align: center;
 }
-/* line 1384, stylesheet.scss */
+/* line 1477, stylesheet.scss */
 #function-list2 .circle2 i {
   color: #51c191;
   font-size: 4rem;
 }
-/* line 1389, stylesheet.scss */
+/* line 1482, stylesheet.scss */
 #function-list2 h3 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1586,7 +1698,7 @@ footer a:before {
   font-size: 1.5rem;
   font-weight: 400;
 }
-/* line 1397, stylesheet.scss */
+/* line 1490, stylesheet.scss */
 #function-list2 p {
   color: #666666;
   font-family: "HiraKakuPro-W3";
@@ -1595,7 +1707,8 @@ footer a:before {
   line-height: 2rem;
 }
 
-/* line 1406, stylesheet.scss */
+/* faq */
+/* line 1501, stylesheet.scss */
 #introduction-faq {
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -1603,16 +1716,17 @@ footer a:before {
   background-image: url(image/Group2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   text-align: center;
 }
-/* line 1414, stylesheet.scss */
+/* line 1510, stylesheet.scss */
 #introduction-faq h2 {
   color: #ffffff;
   font-family: "HiraginoSans-W6";
   font-size: 4rem;
   font-weight: 400;
 }
-/* line 1420, stylesheet.scss */
+/* line 1516, stylesheet.scss */
 #introduction-faq p {
   color: #ffffff;
   font-family: "HiraginoSans-W3";
@@ -1620,20 +1734,27 @@ footer a:before {
   font-weight: 400;
   line-height: 3rem;
 }
+@media screen and (max-width: 768px) {
+  /* line 1524, stylesheet.scss */
+  #introduction-faq p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
 
-/* line 1429, stylesheet.scss */
+/* line 1531, stylesheet.scss */
 #faq2 {
   margin-top: 10vh;
 }
-/* line 1432, stylesheet.scss */
+/* line 1534, stylesheet.scss */
 #faq2 .container {
   margin-top: 10vh;
 }
-/* line 1436, stylesheet.scss */
+/* line 1538, stylesheet.scss */
 #faq2 h2 {
   margin-bottom: 10vh;
 }
-/* line 1439, stylesheet.scss */
+/* line 1541, stylesheet.scss */
 #faq2 h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1643,7 +1764,7 @@ footer a:before {
   font-weight: 400;
   border-bottom: solid 1px #51c191;
 }
-/* line 1448, stylesheet.scss */
+/* line 1550, stylesheet.scss */
 #faq2 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1652,18 +1773,24 @@ footer a:before {
   font-size: 1rem;
   font-weight: 400;
 }
-/* line 1456, stylesheet.scss */
+/* line 1558, stylesheet.scss */
 #faq2 p:before {
   content: "・";
 }
-/* line 1459, stylesheet.scss */
+/* line 1561, stylesheet.scss */
 #faq2 a {
   margin-top: 3rem;
   display: block;
   color: #51c191;
   text-align: right;
 }
-/* line 1465, stylesheet.scss */
-#faq2 a:after {
-  content: "　＞＞";
+/* line 1567, stylesheet.scss */
+#faq2 a i {
+  padding-left: 1rem;
+}
+
+/* line 1573, stylesheet.scss */
+.collapsing {
+  position: static !important;
+  transition: height 1s ease;
 }
